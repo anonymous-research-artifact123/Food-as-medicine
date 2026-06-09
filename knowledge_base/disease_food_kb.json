@@ -1,0 +1,1444 @@
+{
+  "source_files": {
+    "mayo_disease_foods": "benchmark/references/mayo_disease_foods.json",
+    "disease_condition_rules": "data/conditions/disease_condition_rules.generated.json"
+  },
+  "generated_date": "2026-05-04",
+  "merge_policy": {
+    "mayo.recommended_foods": "recommend",
+    "mayo.not_recommended_foods": "not_recommend",
+    "disease_condition_rules.beneficial": "recommend",
+    "disease_condition_rules.limit": "not_recommend",
+    "disease_condition_rules.avoid": "not_recommend"
+  },
+  "condition_count": 27,
+  "conditions": {
+    "alzheimers cognitive decline": {
+      "recommend": [
+        "berries (?2 servings/week)",
+        "green leafy vegetables (?6 servings/week)",
+        "other vegetables (?1/day)",
+        "nuts (?5/week)",
+        "beans (>3/week)",
+        "whole grains (?3/day)",
+        "fish (3-5/week)",
+        "poultry",
+        "olive oil"
+      ],
+      "not_recommend": [
+        "red meat",
+        "cheese",
+        "butter",
+        "margarine",
+        "sweets",
+        "fast food",
+        "fried food"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "berries (?2 servings/week)",
+            "green leafy vegetables (?6 servings/week)",
+            "other vegetables (?1/day)",
+            "nuts (?5/week)",
+            "beans (>3/week)",
+            "whole grains (?3/day)",
+            "fish (3-5/week)",
+            "poultry",
+            "olive oil"
+          ],
+          "limit_as_not_recommend": [
+            "red meat",
+            "cheese",
+            "butter",
+            "margarine",
+            "sweets"
+          ],
+          "avoid_as_not_recommend": [
+            "fast food",
+            "fried food"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://www.health.harvard.edu/healthbeat/foods-linked-to-better-brainpower",
+            "https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 11
+          }
+        }
+      },
+      "recommend_count": 9,
+      "not_recommend_count": 7
+    },
+    "bone health osteoporosis": {
+      "recommend": [
+        "dairy products",
+        "leafy green vegetables",
+        "beans",
+        "nuts",
+        "whole-grain cereals",
+        "low-fat or fat-free dairy",
+        "vegetables of all types",
+        "fruits",
+        "whole grains"
+      ],
+      "not_recommend": [
+        "more than 3 cups a day of caffeine-containing beverages",
+        "excessive amounts of alcohol",
+        "alcohol",
+        "coffee",
+        "caffeinated drinks",
+        "soda (especially cola)"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "dairy products",
+            "leafy green vegetables",
+            "beans",
+            "nuts",
+            "whole-grain cereals"
+          ],
+          "not_recommended_foods": [
+            "more than 3 cups a day of caffeine-containing beverages",
+            "excessive amounts of alcohol"
+          ]
+        },
+        "disease_condition_rules": {
+          "beneficial": [
+            "low-fat or fat-free dairy",
+            "vegetables of all types",
+            "fruits",
+            "whole grains"
+          ],
+          "limit_as_not_recommend": [
+            "alcohol",
+            "coffee",
+            "caffeinated drinks"
+          ],
+          "avoid_as_not_recommend": [
+            "soda (especially cola)"
+          ],
+          "references": [
+            "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+            "https://health.clevelandclinic.org/osteoporosis-diet",
+            "https://theros.org.uk/information-and-support/bone-health/nutrition-for-bones/are-there-any-foods-i-should-avoid/"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 12
+          }
+        }
+      },
+      "recommend_count": 9,
+      "not_recommend_count": 6
+    },
+    "breast cancer": {
+      "recommend": [
+        "fruits and vegetables",
+        "cruciferous vegetables",
+        "yellow/orange vegetables",
+        "berries",
+        "tomatoes"
+      ],
+      "not_recommend": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "fruits and vegetables",
+            "cruciferous vegetables",
+            "yellow/orange vegetables",
+            "berries",
+            "tomatoes"
+          ],
+          "limit_as_not_recommend": [
+            "beef",
+            "pork",
+            "lamb",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "bacon",
+            "sausage",
+            "hot dogs",
+            "ham",
+            "lunch meats"
+          ],
+          "references": [
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+            "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 6
+          }
+        }
+      },
+      "recommend_count": 5,
+      "not_recommend_count": 9
+    },
+    "cancer general": {
+      "recommend": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "green vegetables",
+        "dark yellow vegetables",
+        "soybean products",
+        "broccoli",
+        "cauliflower",
+        "nuts",
+        "avocados",
+        "olive oil",
+        "vegetable oils",
+        "blueberries",
+        "walnuts"
+      ],
+      "not_recommend": [
+        "high-fat meats",
+        "foods high in saturated fat",
+        "trans fats",
+        "high-fat diets",
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "fruits",
+            "vegetables",
+            "whole grains",
+            "green vegetables",
+            "dark yellow vegetables",
+            "soybean products",
+            "broccoli",
+            "cauliflower",
+            "nuts",
+            "avocados",
+            "olive oil",
+            "vegetable oils"
+          ],
+          "not_recommended_foods": [
+            "high-fat meats",
+            "foods high in saturated fat",
+            "trans fats",
+            "high-fat diets"
+          ]
+        },
+        "disease_condition_rules": {
+          "beneficial": [
+            "vegetables",
+            "fruits",
+            "whole grains",
+            "nuts",
+            "blueberries",
+            "walnuts"
+          ],
+          "limit_as_not_recommend": [
+            "beef",
+            "pork",
+            "lamb",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "bacon",
+            "sausage",
+            "hot dogs",
+            "ham",
+            "lunch meats"
+          ],
+          "references": [
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+            "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+            "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 5
+          }
+        }
+      },
+      "recommend_count": 14,
+      "not_recommend_count": 13
+    },
+    "cardiovascular disease": {
+      "recommend": [
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains",
+        "vegetables",
+        "fruits",
+        "legumes",
+        "low-fat dairy"
+      ],
+      "not_recommend": [
+        "butter",
+        "cheese",
+        "red meat",
+        "burgers",
+        "steaks",
+        "soda",
+        "sugar-sweetened beverages",
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "fish",
+            "nuts",
+            "olive oil",
+            "whole grains",
+            "vegetables",
+            "fruits",
+            "legumes",
+            "low-fat dairy"
+          ],
+          "limit_as_not_recommend": [
+            "butter",
+            "cheese",
+            "red meat",
+            "burgers",
+            "steaks",
+            "soda",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "cold cuts",
+            "cured meats",
+            "pizza",
+            "soups",
+            "sandwiches",
+            "burritos",
+            "tacos",
+            "savory snacks (chips, crackers, popcorn)"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+            "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+            "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 2
+          }
+        }
+      },
+      "recommend_count": 8,
+      "not_recommend_count": 15
+    },
+    "cholesterol": {
+      "recommend": [
+        "monounsaturated fats",
+        "polyunsaturated fats",
+        "oat bran",
+        "oatmeal",
+        "beans",
+        "peas",
+        "rice bran",
+        "barley",
+        "citrus fruits",
+        "strawberries",
+        "apple pulp",
+        "whole-grain breads",
+        "whole-wheat pasta",
+        "whole-wheat flour",
+        "brown rice",
+        "fruits",
+        "vegetables",
+        "cod",
+        "tuna",
+        "halibut",
+        "salmon",
+        "mackerel",
+        "herring",
+        "olive oil",
+        "peanut oil",
+        "canola oil"
+      ],
+      "not_recommend": [
+        "saturated fat",
+        "trans fats",
+        "fatty or heavily processed meats",
+        "egg yolks",
+        "whole milk products",
+        "commercial cakes",
+        "cookies",
+        "snack foods made with tropical oils",
+        "coconut oil",
+        "palm kernel oil",
+        "palm oil",
+        "cocoa butter"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "monounsaturated fats",
+            "polyunsaturated fats",
+            "oat bran",
+            "oatmeal",
+            "beans",
+            "peas",
+            "rice bran",
+            "barley",
+            "citrus fruits",
+            "strawberries",
+            "apple pulp",
+            "whole-grain breads",
+            "whole-wheat pasta",
+            "whole-wheat flour",
+            "brown rice",
+            "fruits",
+            "vegetables",
+            "cod",
+            "tuna",
+            "halibut",
+            "salmon",
+            "mackerel",
+            "herring",
+            "olive oil",
+            "peanut oil",
+            "canola oil"
+          ],
+          "not_recommended_foods": [
+            "saturated fat",
+            "trans fats",
+            "fatty or heavily processed meats",
+            "egg yolks",
+            "whole milk products",
+            "commercial cakes",
+            "cookies",
+            "snack foods made with tropical oils",
+            "coconut oil",
+            "palm kernel oil",
+            "palm oil",
+            "cocoa butter"
+          ]
+        }
+      },
+      "recommend_count": 26,
+      "not_recommend_count": 12
+    },
+    "colorectal cancer": {
+      "recommend": [
+        "whole grains (90g/day)",
+        "vegetables",
+        "fruits",
+        "broccoli and cruciferous"
+      ],
+      "not_recommend": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages",
+        "lunch meats",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "whole grains (90g/day)",
+            "vegetables",
+            "fruits",
+            "broccoli and cruciferous"
+          ],
+          "limit_as_not_recommend": [
+            "beef",
+            "pork",
+            "lamb",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "lunch meats",
+            "bacon",
+            "sausage",
+            "hot dogs",
+            "ham"
+          ],
+          "references": [
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+            "https://www.cancer.org/cancer/latest-news/5-small-diet-changes-that-can-have-a-big-impact.html",
+            "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+            "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 7
+          }
+        }
+      },
+      "recommend_count": 4,
+      "not_recommend_count": 9
+    },
+    "egg_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "eggs"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "eggs"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "eye health": {
+      "recommend": [
+        "spinach and leafy greens",
+        "almonds",
+        "fatty fish",
+        "mangos",
+        "blueberries"
+      ],
+      "not_recommend": [
+        "white bread",
+        "white rice",
+        "pasta",
+        "potatoes",
+        "foods with corn syrups",
+        "sugars"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "spinach and leafy greens",
+            "almonds",
+            "fatty fish",
+            "mangos",
+            "blueberries"
+          ],
+          "limit_as_not_recommend": [
+            "white bread",
+            "white rice",
+            "pasta",
+            "potatoes"
+          ],
+          "avoid_as_not_recommend": [
+            "foods with corn syrups",
+            "sugars"
+          ],
+          "references": [
+            "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://www.ars.usda.gov/news-events/news/research-news/2007/fast-acting-carbs-may-hasten-vision-loss-over-time/",
+            "https://www.brightfocus.org/resource/top-vision-foods-to-include-in-your-diet/"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 13
+          }
+        }
+      },
+      "recommend_count": 5,
+      "not_recommend_count": 6
+    },
+    "fish_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "fish"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "fish"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "gastrointestinal health": {
+      "recommend": [
+        "high-fiber fruits and vegetables",
+        "whole grains",
+        "legumes",
+        "berries",
+        "mangos"
+      ],
+      "not_recommend": [
+        "meat",
+        "fast food",
+        "prepared frozen meals",
+        "snack foods",
+        "chips",
+        "processed foods",
+        "hot dogs",
+        "microwavable dinners"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "high-fiber fruits and vegetables",
+            "whole grains",
+            "legumes",
+            "berries",
+            "mangos"
+          ],
+          "limit_as_not_recommend": [
+            "meat",
+            "fast food",
+            "prepared frozen meals",
+            "snack foods"
+          ],
+          "avoid_as_not_recommend": [
+            "chips",
+            "processed foods",
+            "hot dogs",
+            "microwavable dinners"
+          ],
+          "references": [
+            "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fiber/art-20043983",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/eating-diet-nutrition"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 14
+          }
+        }
+      },
+      "recommend_count": 5,
+      "not_recommend_count": 8
+    },
+    "gluten_celiac_disease": {
+      "recommend": [],
+      "not_recommend": [
+        "gluten",
+        "wheat",
+        "rye",
+        "barley",
+        "oats that may be cross-contaminated"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "gluten",
+            "wheat",
+            "rye",
+            "barley",
+            "oats that may be cross-contaminated"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 5
+    },
+    "gluten_intolerance": {
+      "recommend": [],
+      "not_recommend": [
+        "gluten",
+        "wheat",
+        "rye",
+        "barley",
+        "oats that may be cross-contaminated"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "gluten",
+            "wheat",
+            "rye",
+            "barley",
+            "oats that may be cross-contaminated"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 5
+    },
+    "gout": {
+      "recommend": [],
+      "not_recommend": [
+        "alcohol",
+        "foods high in purines",
+        "sardines",
+        "anchovies",
+        "organ meats",
+        "herring",
+        "mackerel",
+        "rapid-weight-reduction diets"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "alcohol",
+            "foods high in purines",
+            "sardines",
+            "anchovies",
+            "organ meats",
+            "herring",
+            "mackerel",
+            "rapid-weight-reduction diets"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 8
+    },
+    "hypertension": {
+      "recommend": [
+        "fruits",
+        "vegetables",
+        "grains",
+        "low-fat dairy products",
+        "low-fat or fat-free milk",
+        "low-fat or reduced-fat cottage cheese or ricotta",
+        "reduced-fat cheeses",
+        "reduced-fat or fat-free sour cream",
+        "bread",
+        "bagels",
+        "pita bread",
+        "low-fat flour tortillas",
+        "plain cereal",
+        "brown or white rice",
+        "pasta",
+        "canned fruit in juice or water",
+        "frozen fruit without added sugar",
+        "dried fruit",
+        "frozen vegetables without added butter or sauces",
+        "canned tomato products low in sodium",
+        "canned vegetables or vegetable soups low in sodium",
+        "lentils",
+        "black beans",
+        "red kidney beans",
+        "navy beans",
+        "chickpeas",
+        "white meat skinless chicken and turkey",
+        "unbreaded fish",
+        "pork tenderloin",
+        "extra-lean ground beef",
+        "round or sirloin beef cuts",
+        "herbs",
+        "spices",
+        "flavored vinegars",
+        "salsa or picante sauce",
+        "fruits (4-5 servings/day)",
+        "vegetables (including colorful, legumes)",
+        "low-fat dairy (2-3 servings/day)",
+        "whole grains (7-8 servings/day)",
+        "nuts (4-5 servings/week)",
+        "beans (>3 servings/week)"
+      ],
+      "not_recommend": [
+        "high-sodium foods",
+        "processed foods high in sodium",
+        "soups",
+        "broths",
+        "canned vegetables",
+        "condiments",
+        "salad dressings",
+        "sauces",
+        "dips",
+        "ketchup",
+        "mustard",
+        "relish",
+        "pickles",
+        "olives",
+        "more than a moderate amount of alcohol",
+        "more than 2 cups of coffee a day",
+        "more than 4 cups of tea a day",
+        "more than 4 cans of caffeinated soda a day",
+        "fatty meats",
+        "full-fat dairy",
+        "sugar-sweetened beverages",
+        "sweets",
+        "butter",
+        "cheese",
+        "pizza",
+        "deli meat sandwiches",
+        "cold cuts",
+        "cured meats",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "fruits",
+            "vegetables",
+            "grains",
+            "low-fat dairy products",
+            "low-fat or fat-free milk",
+            "low-fat or reduced-fat cottage cheese or ricotta",
+            "reduced-fat cheeses",
+            "reduced-fat or fat-free sour cream",
+            "bread",
+            "bagels",
+            "pita bread",
+            "low-fat flour tortillas",
+            "plain cereal",
+            "brown or white rice",
+            "pasta",
+            "canned fruit in juice or water",
+            "frozen fruit without added sugar",
+            "dried fruit",
+            "frozen vegetables without added butter or sauces",
+            "canned tomato products low in sodium",
+            "canned vegetables or vegetable soups low in sodium",
+            "lentils",
+            "black beans",
+            "red kidney beans",
+            "navy beans",
+            "chickpeas",
+            "white meat skinless chicken and turkey",
+            "unbreaded fish",
+            "pork tenderloin",
+            "extra-lean ground beef",
+            "round or sirloin beef cuts",
+            "herbs",
+            "spices",
+            "flavored vinegars",
+            "salsa or picante sauce"
+          ],
+          "not_recommended_foods": [
+            "high-sodium foods",
+            "processed foods high in sodium",
+            "soups",
+            "broths",
+            "canned vegetables",
+            "condiments",
+            "salad dressings",
+            "sauces",
+            "dips",
+            "ketchup",
+            "mustard",
+            "relish",
+            "pickles",
+            "olives",
+            "more than a moderate amount of alcohol",
+            "more than 2 cups of coffee a day",
+            "more than 4 cups of tea a day",
+            "more than 4 cans of caffeinated soda a day"
+          ]
+        },
+        "disease_condition_rules": {
+          "beneficial": [
+            "fruits (4-5 servings/day)",
+            "vegetables (including colorful, legumes)",
+            "low-fat dairy (2-3 servings/day)",
+            "whole grains (7-8 servings/day)",
+            "nuts (4-5 servings/week)",
+            "beans (>3 servings/week)"
+          ],
+          "limit_as_not_recommend": [
+            "fatty meats",
+            "full-fat dairy",
+            "sugar-sweetened beverages",
+            "sweets",
+            "butter",
+            "cheese"
+          ],
+          "avoid_as_not_recommend": [
+            "pizza",
+            "deli meat sandwiches",
+            "cold cuts",
+            "cured meats",
+            "soups",
+            "burgers",
+            "burritos",
+            "tacos",
+            "savory snacks (chips, crackers, popcorn)"
+          ],
+          "references": [
+            "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://www.nhlbi.nih.gov/education/dash-eating-plan",
+            "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure",
+            "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 3
+          }
+        }
+      },
+      "recommend_count": 41,
+      "not_recommend_count": 32
+    },
+    "inflammation": {
+      "recommend": [
+        "omega-3 rich foods (salmon, walnuts, flaxseed)",
+        "antioxidants (kale, blueberries, beets)",
+        "whole grains"
+      ],
+      "not_recommend": [
+        "white bread",
+        "pastries",
+        "red meat (burgers, steaks)",
+        "margarine",
+        "shortening",
+        "lard",
+        "french fries",
+        "fried foods",
+        "soda",
+        "sugar-sweetened beverages",
+        "hot dogs",
+        "sausage"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "omega-3 rich foods (salmon, walnuts, flaxseed)",
+            "antioxidants (kale, blueberries, beets)",
+            "whole grains"
+          ],
+          "limit_as_not_recommend": [
+            "white bread",
+            "pastries",
+            "red meat (burgers, steaks)",
+            "margarine",
+            "shortening",
+            "lard"
+          ],
+          "avoid_as_not_recommend": [
+            "french fries",
+            "fried foods",
+            "soda",
+            "sugar-sweetened beverages",
+            "hot dogs",
+            "sausage"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+            "https://www.health.harvard.edu/newsletter_article/foods-that-fight-inflammation"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 15
+          }
+        }
+      },
+      "recommend_count": 3,
+      "not_recommend_count": 12
+    },
+    "lactose_intolerance": {
+      "recommend": [
+        "cheese",
+        "yogurt",
+        "small amounts of milk during meals"
+      ],
+      "not_recommend": [
+        "large amounts of milk",
+        "excess milk products"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "cheese",
+            "yogurt",
+            "small amounts of milk during meals"
+          ],
+          "not_recommended_foods": [
+            "large amounts of milk",
+            "excess milk products"
+          ]
+        }
+      },
+      "recommend_count": 3,
+      "not_recommend_count": 2
+    },
+    "metabolic syndrome": {
+      "recommend": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "legumes",
+        "fish",
+        "low-fat dairy"
+      ],
+      "not_recommend": [
+        "butter",
+        "cheese",
+        "white bread",
+        "white rice",
+        "sweets",
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "soda",
+        "candy",
+        "chips"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "fruits",
+            "vegetables",
+            "whole grains",
+            "legumes",
+            "fish",
+            "low-fat dairy"
+          ],
+          "limit_as_not_recommend": [
+            "butter",
+            "cheese",
+            "white bread",
+            "white rice",
+            "sweets"
+          ],
+          "avoid_as_not_recommend": [
+            "cold cuts",
+            "cured meats",
+            "pizza",
+            "soups",
+            "sandwiches",
+            "soda",
+            "candy",
+            "chips"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://www.nhlbi.nih.gov/health/metabolic-syndrome/treatment",
+            "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+            "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+            "https://diabetes.org/food-nutrition/understanding-carbs"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 16
+          }
+        }
+      },
+      "recommend_count": 6,
+      "not_recommend_count": 13
+    },
+    "milk_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "milk"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "milk"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "obesity weight management": {
+      "recommend": [
+        "non-starchy vegetables",
+        "berries",
+        "whole grains in moderation",
+        "plant-based foods"
+      ],
+      "not_recommend": [
+        "desserts",
+        "sauces",
+        "prepackaged snack foods",
+        "chips",
+        "candy",
+        "regular soda",
+        "sports drinks",
+        "juice"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "non-starchy vegetables",
+            "berries",
+            "whole grains in moderation",
+            "plant-based foods"
+          ],
+          "limit_as_not_recommend": [
+            "desserts",
+            "sauces",
+            "prepackaged snack foods"
+          ],
+          "avoid_as_not_recommend": [
+            "chips",
+            "candy",
+            "regular soda",
+            "sports drinks",
+            "juice"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210981/",
+            "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+            "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes/game-plan"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 9
+          }
+        }
+      },
+      "recommend_count": 4,
+      "not_recommend_count": 8
+    },
+    "peanut_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "peanuts"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "peanuts"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "prostate cancer": {
+      "recommend": [
+        "tomatoes",
+        "walnuts",
+        "non-starchy vegetables"
+      ],
+      "not_recommend": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "sources": {
+        "disease_condition_rules": {
+          "beneficial": [
+            "tomatoes",
+            "walnuts",
+            "non-starchy vegetables"
+          ],
+          "limit_as_not_recommend": [
+            "beef",
+            "pork",
+            "lamb",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "bacon",
+            "sausage",
+            "hot dogs",
+            "ham",
+            "lunch meats"
+          ],
+          "references": [
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://extension.colostate.edu/resource/functional-foods-for-health/",
+            "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+            "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 8
+          }
+        }
+      },
+      "recommend_count": 3,
+      "not_recommend_count": 9
+    },
+    "shellfish_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "shellfish"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "shellfish"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "soy_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "soy"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "soy"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "stroke": {
+      "recommend": [
+        "vegetables",
+        "fruits",
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains"
+      ],
+      "not_recommend": [
+        "excess fat",
+        "excess cholesterol",
+        "butter",
+        "cheese",
+        "red meat",
+        "sweets",
+        "sugar-sweetened beverages",
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "excess fat",
+            "excess cholesterol"
+          ]
+        },
+        "disease_condition_rules": {
+          "beneficial": [
+            "vegetables",
+            "fruits",
+            "fish",
+            "nuts",
+            "olive oil",
+            "whole grains"
+          ],
+          "limit_as_not_recommend": [
+            "butter",
+            "cheese",
+            "red meat",
+            "sweets",
+            "sugar-sweetened beverages"
+          ],
+          "avoid_as_not_recommend": [
+            "cold cuts",
+            "cured meats",
+            "pizza",
+            "soups",
+            "sandwiches",
+            "burgers",
+            "burritos",
+            "tacos",
+            "savory snacks (chips, crackers, popcorn)"
+          ],
+          "references": [
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://www.stroke.org/en/healthy-living/healthy-eating/eat-smart",
+            "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+            "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+            "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 10
+          }
+        }
+      },
+      "recommend_count": 6,
+      "not_recommend_count": 16
+    },
+    "tree_nut_allergy": {
+      "recommend": [],
+      "not_recommend": [
+        "tree nuts"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [],
+          "not_recommended_foods": [
+            "tree nuts"
+          ]
+        }
+      },
+      "recommend_count": 0,
+      "not_recommend_count": 1
+    },
+    "type 2 diabetes": {
+      "recommend": [
+        "fruits",
+        "vegetables",
+        "grains",
+        "starches such as bread, cereal, rice, pasta, beans, corn, potatoes and squash",
+        "milk products",
+        "nonstarchy vegetables",
+        "plant products",
+        "fish",
+        "poultry without skin",
+        "lean meats",
+        "low-fat or fat-free cheese",
+        "high-fiber carbohydrate foods",
+        "whole fruit",
+        "green leafy vegetables",
+        "berries",
+        "whole grains",
+        "legumes",
+        "nuts",
+        "plant-based foods",
+        "low glycemic foods"
+      ],
+      "not_recommend": [
+        "fatty meats",
+        "eggs",
+        "high-fat cheeses",
+        "meat high in saturated fat",
+        "cream",
+        "butter",
+        "too many sweets",
+        "candy",
+        "soda pop",
+        "cookies",
+        "other sugary foods with little nutritional value",
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice",
+        "soda",
+        "sweet tea",
+        "cake",
+        "chips"
+      ],
+      "sources": {
+        "mayo_disease_foods": {
+          "recommended_foods": [
+            "fruits",
+            "vegetables",
+            "grains",
+            "starches such as bread, cereal, rice, pasta, beans, corn, potatoes and squash",
+            "milk products",
+            "nonstarchy vegetables",
+            "plant products",
+            "fish",
+            "poultry without skin",
+            "lean meats",
+            "low-fat or fat-free cheese",
+            "high-fiber carbohydrate foods"
+          ],
+          "not_recommended_foods": [
+            "fatty meats",
+            "eggs",
+            "high-fat cheeses",
+            "meat high in saturated fat",
+            "cream",
+            "butter",
+            "too many sweets",
+            "candy",
+            "soda pop",
+            "cookies",
+            "other sugary foods with little nutritional value"
+          ]
+        },
+        "disease_condition_rules": {
+          "beneficial": [
+            "whole fruit",
+            "green leafy vegetables",
+            "berries",
+            "whole grains",
+            "legumes",
+            "nuts",
+            "plant-based foods",
+            "low glycemic foods"
+          ],
+          "limit_as_not_recommend": [
+            "white bread",
+            "white rice",
+            "sugary cereal",
+            "juice"
+          ],
+          "avoid_as_not_recommend": [
+            "soda",
+            "sweet tea",
+            "cake",
+            "cookies",
+            "candy",
+            "chips"
+          ],
+          "references": [
+            "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+            "https://nutritionsource.hsph.harvard.edu/what-should-yo",
+            "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+            "https://diabetes.org/food-nutrition/understanding-carbs"
+          ],
+          "source_row": {
+            "sheet": "Disease_based_Nutrition_data_de",
+            "row_number": 4
+          }
+        }
+      },
+      "recommend_count": 20,
+      "not_recommend_count": 19
+    }
+  }
+}

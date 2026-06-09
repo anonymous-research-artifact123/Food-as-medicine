@@ -1,0 +1,6288 @@
+{
+  "source_file": "data/conditions/Disease_based_Nutrition_data.xlsx",
+  "generated_from": "scripts/convert_disease_based_nutrition_xlsx.py",
+  "generated_at": "2026-04-04T19:54:21.275374+00:00",
+  "condition_count": 63,
+  "conditions": [
+    {
+      "value": "cardiovascular disease",
+      "label": "Cardiovascular Disease",
+      "beneficial": [
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains",
+        "vegetables",
+        "fruits",
+        "legumes",
+        "low fat dairy"
+      ],
+      "beneficial_raw": [
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains",
+        "vegetables",
+        "fruits",
+        "legumes",
+        "low-fat dairy"
+      ],
+      "beneficial_foods": [
+        "fish",
+        "nuts",
+        "olive oil",
+        "vegetables",
+        "fruits",
+        "legumes"
+      ],
+      "beneficial_concepts": [
+        "fish_seafood",
+        "nuts_seeds",
+        "healthy_unsaturated_fats",
+        "whole_grains",
+        "vegetables",
+        "fruits",
+        "legumes",
+        "low_fat_dairy"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "butter",
+        "cheese",
+        "red meat",
+        "burgers",
+        "steaks",
+        "soda",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "butter",
+        "cheese",
+        "red meat",
+        "burgers",
+        "steaks",
+        "soda",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "butter",
+        "cheese",
+        "red meat",
+        "burgers",
+        "steaks",
+        "soda"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "fast_food",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_raw": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_foods": [
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burritos",
+        "tacos",
+        "chips",
+        "crackers",
+        "popcorn"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "fast_food",
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "heart-healthy",
+        "low sodium",
+        "low-sodium"
+      ],
+      "guideline_aliases": [
+        "cardiovascular_health",
+        "cardiovascular_disease_risk",
+        "hypertension_heart_health"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+        "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+        "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 2,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 8,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 6,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 8,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "hypertension",
+      "label": "Hypertension",
+      "beneficial": [
+        "fruits",
+        "vegetables (including colorful, legumes)",
+        "low fat dairy",
+        "whole grains",
+        "nuts",
+        "beans"
+      ],
+      "beneficial_raw": [
+        "fruits (4-5 servings/day)",
+        "vegetables (including colorful, legumes)",
+        "low-fat dairy (2-3 servings/day)",
+        "whole grains (7-8 servings/day)",
+        "nuts (4-5 servings/week)",
+        "beans (>3 servings/week)"
+      ],
+      "beneficial_foods": [
+        "including colorful",
+        "legumes"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "legumes",
+        "low_fat_dairy",
+        "whole_grains",
+        "nuts_seeds"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "fatty meats",
+        "full fat dairy",
+        "sugar sweetened beverages",
+        "sweets",
+        "butter",
+        "cheese"
+      ],
+      "limit_raw": [
+        "fatty meats",
+        "full-fat dairy",
+        "sugar-sweetened beverages",
+        "sweets",
+        "butter",
+        "cheese"
+      ],
+      "limit_foods": [
+        "fatty meats",
+        "full fat dairy",
+        "sweets",
+        "butter",
+        "cheese"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "full_fat_dairy",
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "pizza",
+        "deli meat sandwiches",
+        "cold cuts",
+        "cured meats",
+        "soups",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_raw": [
+        "pizza",
+        "deli meat sandwiches",
+        "cold cuts",
+        "cured meats",
+        "soups",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_foods": [
+        "pizza",
+        "soups",
+        "burgers",
+        "burritos",
+        "tacos",
+        "chips",
+        "crackers",
+        "popcorn"
+      ],
+      "avoid_concepts": [
+        "fast_food",
+        "processed_meats",
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "low-sodium",
+        "dash"
+      ],
+      "guideline_aliases": [
+        "hypertension",
+        "hypertension_heart_health"
+      ],
+      "references": [
+        "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://www.nhlbi.nih.gov/education/dash-eating-plan",
+        "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure",
+        "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 3,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 5,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 8,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "type 2 diabetes",
+      "label": "Type 2 Diabetes",
+      "beneficial": [
+        "whole fruit",
+        "green leafy vegetables",
+        "berries",
+        "whole grains",
+        "legumes",
+        "nuts",
+        "plant based foods",
+        "low glycemic foods"
+      ],
+      "beneficial_raw": [
+        "whole fruit",
+        "green leafy vegetables",
+        "berries",
+        "whole grains",
+        "legumes",
+        "nuts",
+        "plant-based foods",
+        "low glycemic foods"
+      ],
+      "beneficial_foods": [
+        "berries",
+        "legumes",
+        "nuts"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "leafy_greens",
+        "berries",
+        "whole_grains",
+        "legumes",
+        "nuts_seeds",
+        "vegetables",
+        "non_starchy_vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_raw": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_foods": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "soda",
+        "sweet tea",
+        "cake",
+        "cookies",
+        "candy",
+        "chips"
+      ],
+      "avoid_raw": [
+        "soda",
+        "sweet tea",
+        "cake",
+        "cookies",
+        "candy",
+        "chips"
+      ],
+      "avoid_foods": [
+        "soda",
+        "cake",
+        "cookies",
+        "candy",
+        "chips"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "diabetic-friendly",
+        "low sugar",
+        "low glycemic",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "type_2_diabetes",
+        "type_2_diabetes_prediabetes"
+      ],
+      "references": [
+        "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://nutritionsource.hsph.harvard.edu/what-should-yo",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://diabetes.org/food-nutrition/understanding-carbs"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 4,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 8,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 5,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "cancer general",
+      "label": "Cancer",
+      "beneficial": [
+        "vegetables",
+        "fruits",
+        "whole grains",
+        "nuts",
+        "blueberries",
+        "walnuts"
+      ],
+      "beneficial_raw": [
+        "vegetables",
+        "fruits",
+        "whole grains",
+        "nuts",
+        "blueberries",
+        "walnuts"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "fruits",
+        "nuts",
+        "blueberries",
+        "walnuts"
+      ],
+      "beneficial_concepts": [
+        "vegetables",
+        "fruits",
+        "whole_grains",
+        "nuts_seeds",
+        "berries"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_raw": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_foods": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_concepts": [
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "high fiber",
+        "plant-based"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+        "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+        "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 5,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 5,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "breast cancer",
+      "label": "Breast Cancer",
+      "beneficial": [
+        "fruits and vegetables",
+        "cruciferous vegetables",
+        "yellow orange vegetables",
+        "berries",
+        "tomatoes"
+      ],
+      "beneficial_raw": [
+        "fruits and vegetables",
+        "cruciferous vegetables",
+        "yellow/orange vegetables",
+        "berries",
+        "tomatoes"
+      ],
+      "beneficial_foods": [
+        "berries",
+        "tomatoes"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "cruciferous_vegetables",
+        "orange_yellow_vegetables",
+        "berries"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_raw": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_foods": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_concepts": [
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "plant-based",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+        "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 6,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 5,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "colorectal cancer",
+      "label": "Colorectal Cancer",
+      "beneficial": [
+        "whole grains",
+        "vegetables",
+        "fruits",
+        "broccoli and cruciferous"
+      ],
+      "beneficial_raw": [
+        "whole grains (90g/day)",
+        "vegetables",
+        "fruits",
+        "broccoli and cruciferous"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "fruits",
+        "broccoli"
+      ],
+      "beneficial_concepts": [
+        "whole_grains",
+        "vegetables",
+        "fruits",
+        "cruciferous_vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "lunch meats",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham"
+      ],
+      "avoid_raw": [
+        "lunch meats",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham"
+      ],
+      "avoid_foods": [
+        "lunch meats",
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham"
+      ],
+      "avoid_concepts": [
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "high fiber",
+        "plant-based"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+        "https://www.cancer.org/cancer/latest-news/5-small-diet-changes-that-can-have-a-big-impact.html",
+        "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+        "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 7,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 5,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "prostate cancer",
+      "label": "Prostate Cancer",
+      "beneficial": [
+        "tomatoes",
+        "walnuts",
+        "non starchy vegetables"
+      ],
+      "beneficial_raw": [
+        "tomatoes",
+        "walnuts",
+        "non-starchy vegetables"
+      ],
+      "beneficial_foods": [
+        "tomatoes",
+        "walnuts"
+      ],
+      "beneficial_concepts": [
+        "nuts_seeds",
+        "non_starchy_vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "beef",
+        "pork",
+        "lamb",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "beef",
+        "pork",
+        "lamb"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_raw": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_foods": [
+        "bacon",
+        "sausage",
+        "hot dogs",
+        "ham",
+        "lunch meats"
+      ],
+      "avoid_concepts": [
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "plant-based",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://www.cancer.org/content/dam/cancer-org/microsites/circle-of-life/documents/col-nupa.pdf",
+        "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/acs-guidelines-nutrition-physical-activity-cancer-prevention.html"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 8,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 5,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "obesity weight management",
+      "label": "Obesity/Weight Management",
+      "beneficial": [
+        "non starchy vegetables",
+        "berries",
+        "whole grains in moderation",
+        "plant based foods"
+      ],
+      "beneficial_raw": [
+        "non-starchy vegetables",
+        "berries",
+        "whole grains in moderation",
+        "plant-based foods"
+      ],
+      "beneficial_foods": [
+        "berries"
+      ],
+      "beneficial_concepts": [
+        "non_starchy_vegetables",
+        "berries",
+        "whole_grains",
+        "legumes",
+        "nuts_seeds",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "desserts",
+        "sauces",
+        "prepackaged snack foods"
+      ],
+      "limit_raw": [
+        "desserts",
+        "sauces",
+        "prepackaged snack foods"
+      ],
+      "limit_foods": [
+        "desserts",
+        "sauces"
+      ],
+      "limit_concepts": [
+        "high_sugar_desserts",
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "chips",
+        "candy",
+        "regular soda",
+        "sports drinks",
+        "juice"
+      ],
+      "avoid_raw": [
+        "chips",
+        "candy",
+        "regular soda",
+        "sports drinks",
+        "juice"
+      ],
+      "avoid_foods": [
+        "chips",
+        "candy",
+        "juice"
+      ],
+      "avoid_concepts": [
+        "high_sugar_desserts",
+        "sugar_sweetened_beverages"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low calorie",
+        "high protein",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210981/",
+        "https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+        "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-type-2-diabetes/game-plan"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 9,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "stroke",
+      "label": "Stroke",
+      "beneficial": [
+        "vegetables",
+        "fruits",
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains"
+      ],
+      "beneficial_raw": [
+        "vegetables",
+        "fruits",
+        "fish",
+        "nuts",
+        "olive oil",
+        "whole grains"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "fruits",
+        "fish",
+        "nuts",
+        "olive oil"
+      ],
+      "beneficial_concepts": [
+        "vegetables",
+        "fruits",
+        "fish_seafood",
+        "nuts_seeds",
+        "healthy_unsaturated_fats",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "butter",
+        "cheese",
+        "red meat",
+        "sweets",
+        "sugar sweetened beverages"
+      ],
+      "limit_raw": [
+        "butter",
+        "cheese",
+        "red meat",
+        "sweets",
+        "sugar-sweetened beverages"
+      ],
+      "limit_foods": [
+        "butter",
+        "cheese",
+        "red meat",
+        "sweets"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "high_sugar_desserts",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_raw": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burgers",
+        "burritos",
+        "tacos",
+        "savory snacks (chips, crackers, popcorn)"
+      ],
+      "avoid_foods": [
+        "pizza",
+        "soups",
+        "sandwiches",
+        "burgers",
+        "burritos",
+        "tacos",
+        "chips",
+        "crackers",
+        "popcorn"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "fast_food",
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "heart-healthy",
+        "low sodium",
+        "low-sodium"
+      ],
+      "guideline_aliases": [
+        "cardiovascular_disease_risk",
+        "cardiovascular_health"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://www.stroke.org/en/healthy-living/healthy-eating/eat-smart",
+        "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+        "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/shaking-the-salt-habit-to-lower-high-blood-pressure"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 10,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 9,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "alzheimers cognitive decline",
+      "label": "Alzheimer",
+      "beneficial": [
+        "berries",
+        "green leafy vegetable",
+        "other vegetable",
+        "nuts",
+        "beans",
+        "whole grains",
+        "fish",
+        "poultry",
+        "olive oil"
+      ],
+      "beneficial_raw": [
+        "berries",
+        "green leafy vegetable",
+        "other vegetable",
+        "nuts",
+        "beans",
+        "whole grains",
+        "fish",
+        "poultry",
+        "olive oil"
+      ],
+      "beneficial_foods": [
+        "berries",
+        "nuts",
+        "beans",
+        "fish",
+        "poultry",
+        "olive oil"
+      ],
+      "beneficial_concepts": [
+        "berries",
+        "leafy_greens",
+        "vegetables",
+        "nuts_seeds",
+        "legumes",
+        "whole_grains",
+        "fish_seafood",
+        "poultry",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "cheese",
+        "butter",
+        "margarine",
+        "sweets"
+      ],
+      "limit_raw": [
+        "red meat",
+        "cheese",
+        "butter",
+        "margarine",
+        "sweets"
+      ],
+      "limit_foods": [
+        "red meat",
+        "cheese",
+        "butter",
+        "margarine",
+        "sweets"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "fast food",
+        "fried food"
+      ],
+      "avoid_raw": [
+        "fast food",
+        "fried food"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "fast_food",
+        "fried_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "brain-healthy",
+        "omega-3"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://www.health.harvard.edu/healthbeat/foods-linked-to-better-brainpower",
+        "https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 11,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 9,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 5,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "bone health osteoporosis",
+      "label": "Bone Health/Osteoporosis",
+      "beneficial": [
+        "low fat or fat free dairy",
+        "vegetables of all types",
+        "fruits",
+        "whole grains"
+      ],
+      "beneficial_raw": [
+        "low-fat or fat-free dairy",
+        "vegetables of all types",
+        "fruits",
+        "whole grains"
+      ],
+      "beneficial_foods": [
+        "vegetables of all types",
+        "fruits"
+      ],
+      "beneficial_concepts": [
+        "low_fat_dairy",
+        "vegetables",
+        "fruits",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "alcohol",
+        "coffee",
+        "caffeinated drinks"
+      ],
+      "limit_raw": [
+        "alcohol",
+        "coffee",
+        "caffeinated drinks"
+      ],
+      "limit_foods": [
+        "alcohol",
+        "coffee",
+        "caffeinated drinks"
+      ],
+      "limit_concepts": [
+        "alcohol",
+        "caffeinated_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "soda (especially cola)"
+      ],
+      "avoid_raw": [
+        "soda (especially cola)"
+      ],
+      "avoid_foods": [
+        "especially cola"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "high calcium",
+        "bone-healthy"
+      ],
+      "guideline_aliases": [
+        "osteoporosis_bone_health"
+      ],
+      "references": [
+        "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/access-foods-support-healthy-dietary-patterns",
+        "https://health.clevelandclinic.org/osteoporosis-diet",
+        "https://theros.org.uk/information-and-support/bone-health/nutrition-for-bones/are-there-any-foods-i-should-avoid/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 12,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "eye health",
+      "label": "Eye Health",
+      "beneficial": [
+        "spinach and leafy greens",
+        "almonds",
+        "fatty fish",
+        "mangos",
+        "blueberries"
+      ],
+      "beneficial_raw": [
+        "spinach and leafy greens",
+        "almonds",
+        "fatty fish",
+        "mangos",
+        "blueberries"
+      ],
+      "beneficial_foods": [
+        "spinach",
+        "almonds",
+        "fatty fish",
+        "mangos",
+        "blueberries"
+      ],
+      "beneficial_concepts": [
+        "leafy_greens",
+        "nuts_seeds",
+        "omega_3_rich_foods",
+        "berries"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "white bread",
+        "white rice",
+        "pasta",
+        "potatoes"
+      ],
+      "limit_raw": [
+        "white bread",
+        "white rice",
+        "pasta",
+        "potatoes"
+      ],
+      "limit_foods": [
+        "white bread",
+        "white rice",
+        "pasta",
+        "potatoes"
+      ],
+      "limit_concepts": [
+        "refined_grains"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "foods with corn syrups",
+        "sugars"
+      ],
+      "avoid_raw": [
+        "foods with corn syrups",
+        "sugars"
+      ],
+      "avoid_foods": [
+        "sugars"
+      ],
+      "avoid_concepts": [
+        "high_sugar_desserts",
+        "sugar_sweetened_beverages"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "vitamin a rich",
+        "eye-healthy"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://www.ars.usda.gov/news-events/news/research-news/2007/fast-acting-carbs-may-hasten-vision-loss-over-time/",
+        "https://www.brightfocus.org/resource/top-vision-foods-to-include-in-your-diet/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 13,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gastrointestinal health",
+      "label": "Gastrointestinal Health",
+      "beneficial": [
+        "high fiber fruits and vegetables",
+        "whole grains",
+        "legumes",
+        "berries",
+        "mangos"
+      ],
+      "beneficial_raw": [
+        "high-fiber fruits and vegetables",
+        "whole grains",
+        "legumes",
+        "berries",
+        "mangos"
+      ],
+      "beneficial_foods": [
+        "legumes",
+        "berries",
+        "mangos"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "whole_grains",
+        "legumes",
+        "berries"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "meat",
+        "fast food",
+        "prepared frozen meals",
+        "snack foods"
+      ],
+      "limit_raw": [
+        "meat",
+        "fast food",
+        "prepared frozen meals",
+        "snack foods"
+      ],
+      "limit_foods": [
+        "meat"
+      ],
+      "limit_concepts": [
+        "fast_food",
+        "highly_processed_foods",
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "chips",
+        "processed foods",
+        "hot dogs",
+        "microwavable dinners"
+      ],
+      "avoid_raw": [
+        "chips",
+        "processed foods",
+        "hot dogs",
+        "microwavable dinners"
+      ],
+      "avoid_foods": [
+        "chips",
+        "hot dogs",
+        "microwavable dinners"
+      ],
+      "avoid_concepts": [
+        "highly_processed_foods",
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "gerd-friendly",
+        "ibs-friendly",
+        "easy digestion"
+      ],
+      "guideline_aliases": [
+        "constipation_low_fiber_intake"
+      ],
+      "references": [
+        "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/fiber/art-20043983",
+        "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/vegetables-and-fruits/",
+        "https://extension.colostate.edu/resource/functional-foods-for-health/",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 14,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "inflammation",
+      "label": "Inflammation",
+      "beneficial": [
+        "omega 3 rich foods (salmon, walnuts, flaxseed)",
+        "antioxidants (kale, blueberries, beets)",
+        "whole grains"
+      ],
+      "beneficial_raw": [
+        "omega-3 rich foods (salmon, walnuts, flaxseed)",
+        "antioxidants (kale, blueberries, beets)",
+        "whole grains"
+      ],
+      "beneficial_foods": [
+        "salmon",
+        "walnuts",
+        "flaxseed",
+        "kale",
+        "blueberries",
+        "beets"
+      ],
+      "beneficial_concepts": [
+        "nuts_seeds",
+        "fish_seafood",
+        "omega_3_rich_foods",
+        "berries",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "white bread",
+        "pastries",
+        "red meat (burgers, steaks)",
+        "margarine",
+        "shortening",
+        "lard"
+      ],
+      "limit_raw": [
+        "white bread",
+        "pastries",
+        "red meat (burgers, steaks)",
+        "margarine",
+        "shortening",
+        "lard"
+      ],
+      "limit_foods": [
+        "white bread",
+        "pastries",
+        "burgers",
+        "steaks",
+        "margarine",
+        "shortening",
+        "lard"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "high_sugar_desserts",
+        "red_meat",
+        "fast_food"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "french fries",
+        "fried foods",
+        "soda",
+        "sugar sweetened beverages",
+        "hot dogs",
+        "sausage"
+      ],
+      "avoid_raw": [
+        "french fries",
+        "fried foods",
+        "soda",
+        "sugar-sweetened beverages",
+        "hot dogs",
+        "sausage"
+      ],
+      "avoid_foods": [
+        "french fries",
+        "soda",
+        "hot dogs",
+        "sausage"
+      ],
+      "avoid_concepts": [
+        "fried_foods",
+        "sugar_sweetened_beverages",
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "anti-inflammatory",
+        "omega-3"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://health.ucdavis.edu/blog/good-food/top-15-healthy-foods-you-should-be-eating/2019/04",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6650179/",
+        "https://www.health.harvard.edu/newsletter_article/foods-that-fight-inflammation"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 15,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 7,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 4,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "metabolic syndrome",
+      "label": "Metabolic Syndrome",
+      "beneficial": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "legumes",
+        "fish",
+        "low fat dairy"
+      ],
+      "beneficial_raw": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "legumes",
+        "fish",
+        "low-fat dairy"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "legumes",
+        "fish"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "fish_seafood",
+        "low_fat_dairy"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "butter",
+        "cheese",
+        "white bread",
+        "white rice",
+        "sweets"
+      ],
+      "limit_raw": [
+        "butter",
+        "cheese",
+        "white bread",
+        "white rice",
+        "sweets"
+      ],
+      "limit_foods": [
+        "butter",
+        "cheese",
+        "white bread",
+        "white rice",
+        "sweets"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "soda",
+        "candy",
+        "chips"
+      ],
+      "avoid_raw": [
+        "cold cuts",
+        "cured meats",
+        "pizza",
+        "soups",
+        "sandwiches",
+        "soda",
+        "candy",
+        "chips"
+      ],
+      "avoid_foods": [
+        "pizza",
+        "soups",
+        "sandwiches",
+        "soda",
+        "candy",
+        "chips"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "fast_food",
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "diabetic-friendly",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "type_2_diabetes_prediabetes",
+        "hyperlipidemia_cholesterol_lowering",
+        "hypertension_heart_health"
+      ],
+      "references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071223/",
+        "https://www.nhlbi.nih.gov/health/metabolic-syndrome/treatment",
+        "https://www.heart.org/-/media/aha/h4gm/pdf-files/salty-six-adults-english-infographic.pdf",
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats",
+        "https://diabetes.org/food-nutrition/understanding-carbs"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 16,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 5,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 6,
+        "avoid_concept_count": 4,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "chronic kidney disease",
+      "label": "Chronic Kidney Disease",
+      "beneficial": [
+        "lower sodium meals",
+        "berries",
+        "apples",
+        "cabbage",
+        "cauliflower",
+        "fish",
+        "egg whites",
+        "healthy oils"
+      ],
+      "beneficial_raw": [
+        "lower-sodium meals",
+        "berries",
+        "apples",
+        "cabbage",
+        "cauliflower",
+        "fish",
+        "egg whites",
+        "healthy oils"
+      ],
+      "beneficial_foods": [
+        "berries",
+        "apples",
+        "cabbage",
+        "cauliflower",
+        "fish",
+        "egg whites"
+      ],
+      "beneficial_concepts": [
+        "lower_sodium_meals",
+        "berries",
+        "fish_seafood",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "foods high in sodium",
+        "phosphorus",
+        "and potassium (dark colas, bran cereals, nuts, beans, dairy)"
+      ],
+      "limit_raw": [
+        "foods high in sodium",
+        "phosphorus",
+        "and potassium if advised (dark colas, bran cereals, nuts, beans, dairy)"
+      ],
+      "limit_foods": [
+        "phosphorus",
+        "dark colas",
+        "bran cereals",
+        "nuts",
+        "beans",
+        "dairy"
+      ],
+      "limit_concepts": [
+        "high_sodium_foods",
+        "high_phosphorus_foods",
+        "legumes",
+        "nuts_seeds",
+        "high_potassium_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "salt substitutes with potassium",
+        "processed meats",
+        "instant noodles",
+        "canned soups with phosphate additives"
+      ],
+      "avoid_raw": [
+        "salt substitutes with potassium",
+        "processed meats",
+        "instant noodles",
+        "canned soups with phosphate additives"
+      ],
+      "avoid_foods": [
+        "instant noodles",
+        "canned soups with phosphate additives"
+      ],
+      "avoid_concepts": [
+        "potassium_salt_substitutes",
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "kidney-friendly"
+      ],
+      "guideline_aliases": [
+        "chronic_kidney_disease",
+        "chronic_kidney_disease_ckd_stage_3_5"
+      ],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/healthy-eating-adults-chronic-kidney-disease"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 17,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 6,
+        "limit_concept_count": 5,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 2,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "kidney failure",
+      "label": "Kidney Failure",
+      "beneficial": [
+        "provider guided kidney diet",
+        "lower sodium foods",
+        "kidney safe fruits and vegetables",
+        "prescribed supplements if needed"
+      ],
+      "beneficial_raw": [
+        "provider-guided kidney diet",
+        "lower-sodium foods",
+        "kidney-safe fruits and vegetables",
+        "prescribed supplements if needed"
+      ],
+      "beneficial_foods": [],
+      "beneficial_concepts": [
+        "lower_sodium_meals",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [
+        "provider guided kidney diet",
+        "prescribed supplements if needed"
+      ],
+      "limit": [
+        "foods high in potassium and phosphorus",
+        "large fluid loads if fluid restricted"
+      ],
+      "limit_raw": [
+        "foods high in potassium and phosphorus",
+        "large fluid loads if fluid-restricted"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "high_potassium_foods",
+        "high_phosphorus_foods"
+      ],
+      "limit_unmapped": [
+        "large fluid loads if fluid restricted"
+      ],
+      "avoid": [
+        "over the counter supplements not recommended by your kidney team",
+        "salt substitutes high in potassium"
+      ],
+      "avoid_raw": [
+        "over-the-counter supplements not recommended by your kidney team",
+        "salt substitutes high in potassium"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "potassium_salt_substitutes"
+      ],
+      "avoid_unmapped": [
+        "over the counter supplements not recommended by your kidney team"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "kidney-friendly"
+      ],
+      "guideline_aliases": [
+        "chronic_kidney_disease",
+        "chronic_kidney_disease_ckd_stage_3_5"
+      ],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/eating-right"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 18,
+      "mapping_summary": {
+        "beneficial_food_count": 0,
+        "beneficial_concept_count": 3,
+        "beneficial_unmapped_count": 2,
+        "limit_food_count": 0,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "hemodialysis",
+      "label": "Hemodialysis",
+      "beneficial": [
+        "high quality protein (fish, chicken, eggs)",
+        "lower sodium meals",
+        "kidney safe fruits and vegetables"
+      ],
+      "beneficial_raw": [
+        "high-quality protein (fish, chicken, eggs)",
+        "lower-sodium meals",
+        "kidney-safe fruits and vegetables"
+      ],
+      "beneficial_foods": [
+        "fish",
+        "chicken",
+        "eggs"
+      ],
+      "beneficial_concepts": [
+        "fish_seafood",
+        "poultry",
+        "lower_sodium_meals",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "fluids",
+        "sodium",
+        "potassium",
+        "and phosphorus",
+        "dairy",
+        "beans",
+        "nuts",
+        "bran cereals"
+      ],
+      "limit_raw": [
+        "fluids",
+        "sodium",
+        "potassium",
+        "and phosphorus as prescribed",
+        "dairy",
+        "beans",
+        "nuts",
+        "bran cereals"
+      ],
+      "limit_foods": [
+        "fluids",
+        "sodium",
+        "potassium",
+        "and phosphorus",
+        "dairy",
+        "beans",
+        "nuts",
+        "bran cereals"
+      ],
+      "limit_concepts": [
+        "high_potassium_foods",
+        "high_phosphorus_foods",
+        "legumes",
+        "nuts_seeds"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "processed meats",
+        "hot dogs",
+        "canned chili",
+        "salt substitutes with potassium"
+      ],
+      "avoid_raw": [
+        "processed meats",
+        "hot dogs",
+        "canned chili",
+        "salt substitutes with potassium"
+      ],
+      "avoid_foods": [
+        "hot dogs",
+        "canned chili"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "potassium_salt_substitutes"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "kidney-friendly"
+      ],
+      "guideline_aliases": [
+        "chronic_kidney_disease",
+        "chronic_kidney_disease_ckd_stage_3_5"
+      ],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis/eating-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 19,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 8,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 2,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "kidney stones",
+      "label": "Kidney Stones",
+      "beneficial": [
+        "water",
+        "citrus drinks",
+        "fruits",
+        "vegetables",
+        "calcium rich foods"
+      ],
+      "beneficial_raw": [
+        "water",
+        "citrus drinks",
+        "fruits",
+        "vegetables",
+        "calcium-rich foods with meals"
+      ],
+      "beneficial_foods": [
+        "water",
+        "citrus drinks",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "vitamin_c_rich_produce",
+        "fruits",
+        "vegetables",
+        "calcium_rich_foods"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "sodium",
+        "animal protein",
+        "oxalate rich foods (spinach, nuts, chocolate, beets)"
+      ],
+      "limit_raw": [
+        "sodium",
+        "animal protein",
+        "oxalate-rich foods if advised (spinach, nuts, chocolate, beets)"
+      ],
+      "limit_foods": [
+        "sodium",
+        "animal protein",
+        "spinach",
+        "nuts",
+        "chocolate",
+        "beets"
+      ],
+      "limit_concepts": [
+        "nuts_seeds",
+        "high_oxalate_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "very salty foods",
+        "organ meats and excess shellfish meat for uric acid stones"
+      ],
+      "avoid_raw": [
+        "very salty foods",
+        "organ meats and excess shellfish/meat for uric-acid stones"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "high_sodium_foods",
+        "high_purine_animal_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 20,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 6,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gout",
+      "label": "Gout",
+      "beneficial": [
+        "water",
+        "cherries",
+        "low fat dairy",
+        "vegetables",
+        "whole grains",
+        "legumes"
+      ],
+      "beneficial_raw": [
+        "water",
+        "cherries",
+        "low-fat dairy",
+        "vegetables",
+        "whole grains",
+        "legumes"
+      ],
+      "beneficial_foods": [
+        "water",
+        "cherries",
+        "vegetables",
+        "legumes"
+      ],
+      "beneficial_concepts": [
+        "low_fat_dairy",
+        "vegetables",
+        "whole_grains",
+        "legumes"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "shellfish",
+        "high fructose foods",
+        "alcohol"
+      ],
+      "limit_raw": [
+        "red meat",
+        "shellfish",
+        "high-fructose foods",
+        "alcohol"
+      ],
+      "limit_foods": [
+        "red meat",
+        "shellfish",
+        "alcohol"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "fish_seafood",
+        "alcohol"
+      ],
+      "limit_unmapped": [
+        "high fructose foods"
+      ],
+      "avoid": [
+        "organ meats",
+        "beer",
+        "sugary soft drinks",
+        "gravies and meat broths"
+      ],
+      "avoid_raw": [
+        "organ meats",
+        "beer",
+        "sugary soft drinks",
+        "gravies and meat broths"
+      ],
+      "avoid_foods": [
+        "organ meats",
+        "beer",
+        "gravies and meat broths"
+      ],
+      "avoid_concepts": [
+        "high_purine_animal_foods",
+        "alcohol",
+        "sugar_sweetened_beverages"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.arthritis.org/health-wellness/healthy-living/nutrition/healthy-eating/foods-to-avoid-for-gout",
+        "https://www.arthritis.org/health-wellness/healthy-living/nutrition/healthy-eating/eat-right-for-your-type-of-arthritis"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 21,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gerd",
+      "label": "GERD",
+      "beneficial": [
+        "oatmeal",
+        "non citrus fruits",
+        "vegetables",
+        "lean proteins",
+        "smaller low fat meals"
+      ],
+      "beneficial_raw": [
+        "oatmeal",
+        "non-citrus fruits",
+        "vegetables",
+        "lean proteins",
+        "smaller low-fat meals"
+      ],
+      "beneficial_foods": [
+        "oatmeal",
+        "non citrus fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "whole_grains",
+        "fruits",
+        "acidic_trigger_foods",
+        "vegetables",
+        "lean_proteins",
+        "low_fat_meals"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "coffee",
+        "chocolate",
+        "mint",
+        "high fat foods"
+      ],
+      "limit_raw": [
+        "coffee",
+        "chocolate",
+        "mint",
+        "high-fat foods"
+      ],
+      "limit_foods": [
+        "coffee",
+        "chocolate",
+        "mint"
+      ],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "high_fat_meals"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "acidic or spicy trigger foods",
+        "late night heavy meals",
+        "alcohol"
+      ],
+      "avoid_raw": [
+        "acidic or spicy trigger foods",
+        "late-night heavy meals",
+        "alcohol if symptomatic"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "acidic_trigger_foods",
+        "spicy_trigger_foods",
+        "alcohol"
+      ],
+      "avoid_unmapped": [
+        "late night heavy meals"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 22,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "barretts esophagus",
+      "label": "Barrett's Esophagus",
+      "beneficial": [
+        "low fat meals",
+        "vegetables",
+        "non citrus fruits",
+        "lean proteins",
+        "weight supportive eating pattern"
+      ],
+      "beneficial_raw": [
+        "low-fat meals",
+        "vegetables",
+        "non-citrus fruits",
+        "lean proteins",
+        "weight-supportive eating pattern"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "non citrus fruits"
+      ],
+      "beneficial_concepts": [
+        "low_fat_meals",
+        "vegetables",
+        "fruits",
+        "acidic_trigger_foods",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [
+        "weight supportive eating pattern"
+      ],
+      "limit": [
+        "coffee",
+        "chocolate",
+        "mint",
+        "high fat foods"
+      ],
+      "limit_raw": [
+        "coffee",
+        "chocolate",
+        "mint",
+        "high-fat foods"
+      ],
+      "limit_foods": [
+        "coffee",
+        "chocolate",
+        "mint"
+      ],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "high_fat_meals"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "acidic or spicy trigger foods",
+        "alcohol",
+        "large late meals"
+      ],
+      "avoid_raw": [
+        "acidic or spicy trigger foods",
+        "alcohol if symptomatic",
+        "large late meals"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "acidic_trigger_foods",
+        "spicy_trigger_foods",
+        "alcohol"
+      ],
+      "avoid_unmapped": [
+        "large late meals"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/barretts-esophagus/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 23,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "celiac disease",
+      "label": "Celiac Disease",
+      "beneficial": [
+        "gluten free whole grains (rice, quinoa, buckwheat)",
+        "fruits",
+        "vegetables",
+        "beans",
+        "nuts",
+        "lean proteins"
+      ],
+      "beneficial_raw": [
+        "gluten-free whole grains (rice, quinoa, buckwheat)",
+        "fruits",
+        "vegetables",
+        "beans",
+        "nuts",
+        "lean proteins"
+      ],
+      "beneficial_foods": [
+        "rice",
+        "quinoa",
+        "buckwheat",
+        "fruits",
+        "vegetables",
+        "beans",
+        "nuts"
+      ],
+      "beneficial_concepts": [
+        "whole_grains",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "nuts_seeds",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "processed gluten free snacks",
+        "added sugars",
+        "saturated fat heavy gluten free products"
+      ],
+      "limit_raw": [
+        "processed gluten-free snacks",
+        "added sugars",
+        "saturated-fat-heavy gluten-free products"
+      ],
+      "limit_foods": [
+        "added sugars"
+      ],
+      "limit_concepts": [
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [
+        "saturated fat heavy gluten free products"
+      ],
+      "avoid": [
+        "wheat",
+        "barley",
+        "rye",
+        "malt",
+        "regular breads",
+        "pasta",
+        "cereals",
+        "beer unless gluten free"
+      ],
+      "avoid_raw": [
+        "wheat",
+        "barley",
+        "rye",
+        "malt",
+        "regular breads",
+        "pasta",
+        "cereals",
+        "beer unless gluten-free"
+      ],
+      "avoid_foods": [
+        "pasta",
+        "cereals"
+      ],
+      "avoid_concepts": [
+        "gluten_containing_grains",
+        "alcohol"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition",
+        "https://medlineplus.gov/ency/patientinstructions/000813.htm"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 24,
+      "mapping_summary": {
+        "beneficial_food_count": 7,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 2,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "ibs",
+      "label": "Irritable Bowel Syndrome",
+      "beneficial": [
+        "oats",
+        "soluble fiber",
+        "water"
+      ],
+      "beneficial_raw": [
+        "oats",
+        "soluble fiber",
+        "water"
+      ],
+      "beneficial_foods": [
+        "oats",
+        "soluble fiber",
+        "water"
+      ],
+      "beneficial_concepts": [],
+      "beneficial_unmapped": [],
+      "limit": [
+        "beans",
+        "onions",
+        "cabbage",
+        "broccoli",
+        "fatty or spicy foods",
+        "caffeine"
+      ],
+      "limit_raw": [
+        "beans",
+        "onions",
+        "cabbage",
+        "broccoli",
+        "fatty or spicy foods",
+        "caffeine"
+      ],
+      "limit_foods": [
+        "beans",
+        "onions",
+        "cabbage",
+        "broccoli",
+        "caffeine"
+      ],
+      "limit_concepts": [
+        "legumes",
+        "high_fat_meals",
+        "caffeinated_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "sorbitol sweetened products and personal trigger foods"
+      ],
+      "avoid_raw": [
+        "sorbitol-sweetened products and personal trigger foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "sorbitol sweetened products and personal trigger foods"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition",
+        "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/diet-lifestyle-and-medicines/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 25,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 0,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 5,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "crohns disease",
+      "label": "Crohn's Disease",
+      "beneficial": [
+        "lean proteins",
+        "cooked vegetables"
+      ],
+      "beneficial_raw": [
+        "lean proteins",
+        "cooked vegetables"
+      ],
+      "beneficial_foods": [
+        "cooked vegetables"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "high fat fried foods",
+        "high fiber foods during flares",
+        "lactose if intolerant"
+      ],
+      "limit_raw": [
+        "high-fat fried foods",
+        "high-fiber foods during flares",
+        "lactose if intolerant"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "fried_foods",
+        "high_fiber_foods",
+        "lactose_containing_dairy"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "alcohol and personal trigger foods that worsen diarrhea or pain"
+      ],
+      "avoid_raw": [
+        "alcohol and personal trigger foods that worsen diarrhea or pain"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "alcohol"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 26,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "ulcerative colitis",
+      "label": "Ulcerative Colitis",
+      "beneficial": [
+        "lean proteins",
+        "cooked vegetables"
+      ],
+      "beneficial_raw": [
+        "lean proteins",
+        "cooked vegetables"
+      ],
+      "beneficial_foods": [
+        "cooked vegetables"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "high fat foods",
+        "spicy foods",
+        "lactose if intolerant",
+        "high fiber foods during flares"
+      ],
+      "limit_raw": [
+        "high-fat foods",
+        "spicy foods",
+        "lactose if intolerant",
+        "high-fiber foods during flares"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "high_fat_meals",
+        "spicy_trigger_foods",
+        "lactose_containing_dairy",
+        "high_fiber_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "alcohol and foods that clearly worsen symptoms"
+      ],
+      "avoid_raw": [
+        "alcohol and foods that clearly worsen symptoms"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "alcohol"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/ulcerative-colitis/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 27,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "diverticular disease",
+      "label": "Diverticular Disease",
+      "beneficial": [
+        "high fiber foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "plenty of fluids"
+      ],
+      "beneficial_raw": [
+        "high-fiber foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "plenty of fluids"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "beans",
+        "plenty of fluids"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "low fiber processed foods"
+      ],
+      "limit_raw": [
+        "red meat",
+        "low-fiber processed foods"
+      ],
+      "limit_foods": [
+        "red meat"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "processed meats and chronically low fiber eating patterns"
+      ],
+      "avoid_raw": [
+        "processed meats and chronically low-fiber eating patterns"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "processed_meats"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 28,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "pancreatitis",
+      "label": "Pancreatitis",
+      "beneficial": [
+        "low fat meals",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins",
+        "plenty of fluids"
+      ],
+      "beneficial_raw": [
+        "low-fat meals",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins",
+        "plenty of fluids"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "plenty of fluids"
+      ],
+      "beneficial_concepts": [
+        "low_fat_meals",
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "caffeine",
+        "fatty cuts of meat",
+        "full fat dairy"
+      ],
+      "limit_raw": [
+        "caffeine",
+        "fatty cuts of meat",
+        "full-fat dairy"
+      ],
+      "limit_foods": [
+        "caffeine",
+        "fatty cuts of meat",
+        "full fat dairy"
+      ],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "red_meat",
+        "full_fat_dairy"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "alcohol",
+        "fried foods",
+        "very high fat meals"
+      ],
+      "avoid_raw": [
+        "alcohol",
+        "fried foods",
+        "very high-fat meals"
+      ],
+      "avoid_foods": [
+        "alcohol"
+      ],
+      "avoid_concepts": [
+        "alcohol",
+        "fried_foods",
+        "high_fat_meals"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/pancreatitis/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 29,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gallstones",
+      "label": "Gallstones",
+      "beneficial": [
+        "fiber rich foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "healthy fats like olive oil and fish"
+      ],
+      "beneficial_raw": [
+        "fiber-rich foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "healthy fats like olive oil and fish"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "beans"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "whole_grains",
+        "healthy_unsaturated_fats",
+        "omega_3_rich_foods"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "refined carbohydrates",
+        "added sugars",
+        "large fatty meals"
+      ],
+      "limit_raw": [
+        "refined carbohydrates",
+        "added sugars",
+        "large fatty meals"
+      ],
+      "limit_foods": [
+        "refined carbohydrates",
+        "added sugars"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "high_fat_meals"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "fried foods",
+        "desserts high in unhealthy fats",
+        "rapid crash dieting"
+      ],
+      "avoid_raw": [
+        "fried foods",
+        "desserts high in unhealthy fats",
+        "rapid-crash dieting"
+      ],
+      "avoid_foods": [
+        "rapid crash dieting"
+      ],
+      "avoid_concepts": [
+        "fried_foods",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/gallstones/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 30,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "lactose intolerance",
+      "label": "Lactose Intolerance",
+      "beneficial": [
+        "lactose free milk",
+        "yogurt",
+        "fortified soy products",
+        "calcium rich non dairy foods"
+      ],
+      "beneficial_raw": [
+        "lactose-free milk",
+        "yogurt",
+        "fortified soy products",
+        "calcium-rich non-dairy foods"
+      ],
+      "beneficial_foods": [
+        "lactose free milk",
+        "yogurt"
+      ],
+      "beneficial_concepts": [
+        "calcium_rich_foods"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "regular milk",
+        "soft cheeses",
+        "cream sauces"
+      ],
+      "limit_raw": [
+        "regular milk",
+        "soft cheeses",
+        "cream sauces"
+      ],
+      "limit_foods": [
+        "soft cheeses",
+        "cream sauces"
+      ],
+      "limit_concepts": [
+        "lactose_containing_dairy",
+        "full_fat_dairy"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "large servings of milk",
+        "ice cream",
+        "and other lactose heavy dairy"
+      ],
+      "avoid_raw": [
+        "large servings of milk",
+        "ice cream",
+        "and other lactose-heavy dairy if symptomatic"
+      ],
+      "avoid_foods": [
+        "ice cream"
+      ],
+      "avoid_concepts": [
+        "lactose_containing_dairy"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 31,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 1,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "constipation",
+      "label": "Constipation",
+      "beneficial": [
+        "high fiber foods",
+        "prunes",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "water and soups"
+      ],
+      "beneficial_raw": [
+        "high-fiber foods",
+        "prunes",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "water and soups"
+      ],
+      "beneficial_foods": [
+        "prunes",
+        "fruits",
+        "vegetables",
+        "beans",
+        "water and soups"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "low fiber processed foods",
+        "excess cheese",
+        "too little fluid"
+      ],
+      "limit_raw": [
+        "low-fiber processed foods",
+        "excess cheese",
+        "too little fluid"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "ultra_processed_snack_foods",
+        "full_fat_dairy"
+      ],
+      "limit_unmapped": [
+        "too little fluid"
+      ],
+      "avoid": [
+        "chronic reliance on ultra processed low fiber foods"
+      ],
+      "avoid_raw": [
+        "chronic reliance on ultra-processed low-fiber foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 32,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gastroparesis",
+      "label": "Gastroparesis",
+      "beneficial": [
+        "small frequent meals",
+        "low fat foods",
+        "low fiber foods",
+        "soft or pureed foods"
+      ],
+      "beneficial_raw": [
+        "small frequent meals",
+        "low-fat foods",
+        "low-fiber foods",
+        "soft or pureed foods"
+      ],
+      "beneficial_foods": [],
+      "beneficial_concepts": [
+        "low_fat_meals",
+        "low_fiber_foods"
+      ],
+      "beneficial_unmapped": [
+        "small frequent meals",
+        "soft or pureed foods"
+      ],
+      "limit": [
+        "raw vegetables",
+        "fatty meals",
+        "large meals"
+      ],
+      "limit_raw": [
+        "raw vegetables",
+        "fatty meals",
+        "large meals"
+      ],
+      "limit_foods": [
+        "raw vegetables"
+      ],
+      "limit_concepts": [
+        "vegetables",
+        "high_fat_meals"
+      ],
+      "limit_unmapped": [
+        "large meals"
+      ],
+      "avoid": [
+        "tough fibrous foods such as broccoli stalks",
+        "orange membranes",
+        "and large high fat meals"
+      ],
+      "avoid_raw": [
+        "tough fibrous foods such as broccoli stalks",
+        "orange membranes",
+        "and large high-fat meals"
+      ],
+      "avoid_foods": [
+        "orange membranes"
+      ],
+      "avoid_concepts": [
+        "high_fat_meals"
+      ],
+      "avoid_unmapped": [
+        "tough fibrous foods such as broccoli stalks"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/gastroparesis/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 33,
+      "mapping_summary": {
+        "beneficial_food_count": 0,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 2,
+        "limit_food_count": 1,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "functional dyspepsia",
+      "label": "Functional Dyspepsia",
+      "beneficial": [
+        "small meals",
+        "oatmeal",
+        "rice",
+        "bananas",
+        "lean proteins"
+      ],
+      "beneficial_raw": [
+        "small meals",
+        "oatmeal",
+        "rice",
+        "bananas",
+        "lean proteins"
+      ],
+      "beneficial_foods": [
+        "oatmeal",
+        "rice",
+        "bananas"
+      ],
+      "beneficial_concepts": [
+        "whole_grains",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [
+        "small meals"
+      ],
+      "limit": [
+        "coffee",
+        "citrus",
+        "wheat or grains if they trigger symptoms",
+        "greasy foods"
+      ],
+      "limit_raw": [
+        "coffee",
+        "citrus",
+        "wheat or grains if they trigger symptoms",
+        "greasy foods"
+      ],
+      "limit_foods": [
+        "coffee",
+        "citrus"
+      ],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "acidic_trigger_foods",
+        "gluten_containing_grains",
+        "high_fat_meals"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "carbonated drinks and personal trigger foods"
+      ],
+      "avoid_raw": [
+        "carbonated drinks and personal trigger foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "acidic_trigger_foods",
+        "sugar_sweetened_beverages"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 34,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 2,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "hemorrhoids",
+      "label": "Hemorrhoids",
+      "beneficial": [
+        "high fiber foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "water and clear soups"
+      ],
+      "beneficial_raw": [
+        "high-fiber foods",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "water and clear soups"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "beans",
+        "water and clear soups"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "low fiber foods",
+        "dehydration",
+        "excess processed snacks"
+      ],
+      "limit_raw": [
+        "low-fiber foods",
+        "dehydration",
+        "excess processed snacks"
+      ],
+      "limit_foods": [
+        "dehydration"
+      ],
+      "limit_concepts": [
+        "low_fiber_foods"
+      ],
+      "limit_unmapped": [
+        "excess processed snacks"
+      ],
+      "avoid": [
+        "constipating low fiber eating patterns"
+      ],
+      "avoid_raw": [
+        "constipating low-fiber eating patterns"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "low_fiber_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/hemorrhoids/eating-diet-nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 35,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "dumping syndrome",
+      "label": "Dumping Syndrome",
+      "beneficial": [
+        "higher protein foods",
+        "soluble fiber",
+        "healthy fats"
+      ],
+      "beneficial_raw": [
+        "higher-protein foods",
+        "soluble fiber",
+        "healthy fats"
+      ],
+      "beneficial_foods": [
+        "soluble fiber"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "large meals",
+        "liquids",
+        "concentrated sweets"
+      ],
+      "limit_raw": [
+        "large meals",
+        "liquids with meals",
+        "concentrated sweets"
+      ],
+      "limit_foods": [
+        "liquids",
+        "concentrated sweets"
+      ],
+      "limit_concepts": [
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [
+        "large meals"
+      ],
+      "avoid": [
+        "sugary drinks",
+        "desserts",
+        "very sweet foods eaten alone"
+      ],
+      "avoid_raw": [
+        "sugary drinks",
+        "desserts",
+        "very sweet foods eaten alone"
+      ],
+      "avoid_foods": [
+        "desserts"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/dumping-syndrome/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/digestive-diseases/dumping-syndrome/treatment"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 36,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "hemochromatosis",
+      "label": "Hemochromatosis",
+      "beneficial": [
+        "vegetables",
+        "whole grains",
+        "beans",
+        "lean proteins"
+      ],
+      "beneficial_raw": [
+        "vegetables",
+        "whole grains",
+        "beans",
+        "lean proteins"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "beans"
+      ],
+      "beneficial_concepts": [
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "alcohol",
+        "excess vitamin c rich supplements"
+      ],
+      "limit_raw": [
+        "red meat",
+        "alcohol",
+        "excess vitamin c-rich supplements"
+      ],
+      "limit_foods": [
+        "red meat",
+        "alcohol"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "alcohol"
+      ],
+      "limit_unmapped": [
+        "excess vitamin c rich supplements"
+      ],
+      "avoid": [
+        "raw or undercooked shellfish",
+        "iron supplements",
+        "vitamin c supplements"
+      ],
+      "avoid_raw": [
+        "raw or undercooked shellfish",
+        "iron supplements",
+        "vitamin c supplements"
+      ],
+      "avoid_foods": [
+        "raw or undercooked shellfish"
+      ],
+      "avoid_concepts": [
+        "fish_seafood"
+      ],
+      "avoid_unmapped": [
+        "iron supplements",
+        "vitamin c supplements"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis/eating-diet-nutrition",
+        "https://www.niddk.nih.gov/health-information/liver-disease/hemochromatosis"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 37,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 2
+      }
+    },
+    {
+      "value": "nonalcoholic fatty liver disease",
+      "label": "Nonalcoholic Fatty Liver Disease",
+      "beneficial": [
+        "vegetables",
+        "fruits",
+        "whole grains",
+        "beans",
+        "nuts",
+        "olive oil",
+        "fish",
+        "coffee"
+      ],
+      "beneficial_raw": [
+        "vegetables",
+        "fruits",
+        "whole grains",
+        "beans",
+        "nuts",
+        "olive oil",
+        "fish",
+        "coffee"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "fruits",
+        "beans",
+        "nuts",
+        "olive oil",
+        "fish",
+        "coffee"
+      ],
+      "beneficial_concepts": [
+        "vegetables",
+        "fruits",
+        "whole_grains",
+        "legumes",
+        "nuts_seeds",
+        "healthy_unsaturated_fats",
+        "fish_seafood",
+        "caffeinated_beverages"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "full fat dairy",
+        "refined grains",
+        "added sugars"
+      ],
+      "limit_raw": [
+        "red meat",
+        "full-fat dairy",
+        "refined grains",
+        "added sugars"
+      ],
+      "limit_foods": [
+        "red meat",
+        "full fat dairy",
+        "refined grains",
+        "added sugars"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "full_fat_dairy",
+        "refined_grains"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "sugary drinks",
+        "trans fats",
+        "heavily processed fast food"
+      ],
+      "avoid_raw": [
+        "sugary drinks",
+        "trans fats",
+        "heavily processed fast food"
+      ],
+      "avoid_foods": [
+        "trans fats"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "fast_food"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://liverfoundation.org/liver-diseases/fatty-liver-disease/nonalcoholic-steatohepatitis-nash/nash-treatment/",
+        "https://liverfoundation.org/health-and-wellness/healthy-lifestyle/liver-disease-diets/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 38,
+      "mapping_summary": {
+        "beneficial_food_count": 7,
+        "beneficial_concept_count": 8,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "cirrhosis",
+      "label": "Cirrhosis",
+      "beneficial": [
+        "plant and dairy protein",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "low sodium meals"
+      ],
+      "beneficial_raw": [
+        "plant and dairy protein",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "low-sodium meals"
+      ],
+      "beneficial_foods": [
+        "plant and dairy protein",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "legumes",
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "lower_sodium_meals"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "salt",
+        "canned or restaurant foods",
+        "fatty meats"
+      ],
+      "limit_raw": [
+        "salt",
+        "canned or restaurant foods",
+        "fatty meats"
+      ],
+      "limit_foods": [
+        "salt",
+        "fatty meats"
+      ],
+      "limit_concepts": [
+        "high_sodium_foods",
+        "red_meat"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "alcohol",
+        "raw shellfish",
+        "very salty processed foods"
+      ],
+      "avoid_raw": [
+        "alcohol",
+        "raw shellfish",
+        "very salty processed foods"
+      ],
+      "avoid_foods": [
+        "alcohol",
+        "raw shellfish"
+      ],
+      "avoid_concepts": [
+        "alcohol",
+        "fish_seafood",
+        "highly_processed_foods",
+        "high_sodium_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://liverfoundation.org/liver-diseases/complications-of-liver-disease/cirrhosis/",
+        "https://liverfoundation.org/health-and-wellness/healthy-lifestyle/liver-disease-diets/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 39,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 2,
+        "avoid_concept_count": 4,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "heart failure",
+      "label": "Heart Failure",
+      "beneficial": [
+        "low sodium meals",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "lean proteins"
+      ],
+      "beneficial_raw": [
+        "low-sodium meals",
+        "fruits",
+        "vegetables",
+        "beans",
+        "whole grains",
+        "lean proteins"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "beans"
+      ],
+      "beneficial_concepts": [
+        "lower_sodium_meals",
+        "fruits",
+        "vegetables",
+        "legumes",
+        "whole_grains",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "restaurant meals",
+        "breaded foods",
+        "sauces",
+        "cheese",
+        "salty snacks"
+      ],
+      "limit_raw": [
+        "restaurant meals",
+        "breaded foods",
+        "sauces",
+        "cheese",
+        "salty snacks"
+      ],
+      "limit_foods": [
+        "sauces",
+        "cheese",
+        "salty snacks"
+      ],
+      "limit_concepts": [
+        "fast_food",
+        "fried_foods",
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "processed meats",
+        "canned soups",
+        "pickles",
+        "soy sauce heavy foods"
+      ],
+      "avoid_raw": [
+        "processed meats",
+        "canned soups",
+        "pickles",
+        "soy-sauce-heavy foods"
+      ],
+      "avoid_foods": [
+        "canned soups",
+        "pickles"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "high_sodium_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sodium",
+        "heart-healthy"
+      ],
+      "guideline_aliases": [
+        "cardiovascular_health",
+        "hypertension_heart_health"
+      ],
+      "references": [
+        "https://www.heart.org/-/media/Files/Health-Topics/Heart-Failure/Reading-Food-Labels.pdf",
+        "https://www.heart.org/-/media/Files/Health-Topics/Heart-Failure/Eating-Out-Tips.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 40,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 2,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "high ldl cholesterol hyperlipidemia",
+      "label": "High LDL Cholesterol (Hyperlipidemia)",
+      "beneficial": [
+        "oats",
+        "barley",
+        "beans",
+        "lentils",
+        "nuts",
+        "fish",
+        "olive oil",
+        "fruits and vegetables"
+      ],
+      "beneficial_raw": [
+        "oats",
+        "barley",
+        "beans",
+        "lentils",
+        "nuts",
+        "fish",
+        "olive oil",
+        "fruits and vegetables"
+      ],
+      "beneficial_foods": [
+        "oats",
+        "beans",
+        "lentils",
+        "nuts",
+        "fish",
+        "olive oil"
+      ],
+      "beneficial_concepts": [
+        "gluten_containing_grains",
+        "legumes",
+        "nuts_seeds",
+        "fish_seafood",
+        "healthy_unsaturated_fats",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "butter",
+        "cheese",
+        "fatty beef",
+        "tropical oils"
+      ],
+      "limit_raw": [
+        "butter",
+        "cheese",
+        "fatty beef",
+        "tropical oils"
+      ],
+      "limit_foods": [
+        "butter",
+        "cheese",
+        "fatty beef",
+        "tropical oils"
+      ],
+      "limit_concepts": [
+        "red_meat"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "trans fats",
+        "processed meats",
+        "deep fried fast foods"
+      ],
+      "avoid_raw": [
+        "trans fats",
+        "processed meats",
+        "deep-fried fast foods"
+      ],
+      "avoid_foods": [
+        "trans fats"
+      ],
+      "avoid_concepts": [
+        "processed_meats",
+        "fried_foods",
+        "fast_food"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "heart-healthy",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "hyperlipidemia_cholesterol_lowering",
+        "hyperlipidemia_heart_health"
+      ],
+      "references": [
+        "https://www.heart.org/en/health-topics/cholesterol/prevention-and-treatment-of-high-cholesterol-hyperlipidemia/cooking-to-lower-cholesterol",
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/saturated-fats"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 41,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "hypertriglyceridemia",
+      "label": "Hypertriglyceridemia",
+      "beneficial": [
+        "vegetables",
+        "whole grains",
+        "beans",
+        "fish",
+        "nuts",
+        "unsaturated fats",
+        "high fiber foods"
+      ],
+      "beneficial_raw": [
+        "vegetables",
+        "whole grains",
+        "beans",
+        "fish",
+        "nuts",
+        "unsaturated fats",
+        "high-fiber foods"
+      ],
+      "beneficial_foods": [
+        "vegetables",
+        "beans",
+        "fish",
+        "nuts",
+        "unsaturated fats"
+      ],
+      "beneficial_concepts": [
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "fish_seafood",
+        "nuts_seeds",
+        "healthy_unsaturated_fats",
+        "high_fiber_foods"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "refined carbs",
+        "added sugar",
+        "sweets",
+        "saturated fat"
+      ],
+      "limit_raw": [
+        "refined carbs",
+        "added sugar",
+        "sweets",
+        "saturated fat"
+      ],
+      "limit_foods": [
+        "refined carbs",
+        "added sugar",
+        "sweets",
+        "saturated fat"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "alcohol",
+        "sugar sweetened beverages",
+        "desserts made with high fructose corn syrup"
+      ],
+      "avoid_raw": [
+        "alcohol",
+        "sugar-sweetened beverages",
+        "desserts made with high-fructose corn syrup"
+      ],
+      "avoid_foods": [
+        "alcohol"
+      ],
+      "avoid_concepts": [
+        "alcohol",
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sugar",
+        "high fiber",
+        "heart-healthy"
+      ],
+      "guideline_aliases": [
+        "hyperlipidemia_cholesterol_lowering",
+        "hyperlipidemia_heart_health"
+      ],
+      "references": [
+        "https://www.heart.org/en/news/2019/08/19/prescription-omega3-medications-work-for-high-triglycerides-advisory-says",
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/carbohydrates"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 42,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 1,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "prediabetes",
+      "label": "Prediabetes",
+      "beneficial": [
+        "non starchy vegetables",
+        "beans",
+        "lentils",
+        "whole grains",
+        "nuts",
+        "seeds",
+        "whole fruit"
+      ],
+      "beneficial_raw": [
+        "non-starchy vegetables",
+        "beans",
+        "lentils",
+        "whole grains",
+        "nuts",
+        "seeds",
+        "whole fruit"
+      ],
+      "beneficial_foods": [
+        "beans",
+        "lentils",
+        "nuts",
+        "seeds"
+      ],
+      "beneficial_concepts": [
+        "non_starchy_vegetables",
+        "legumes",
+        "whole_grains",
+        "nuts_seeds",
+        "fruits"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_raw": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_foods": [
+        "white bread",
+        "white rice",
+        "sugary cereal",
+        "juice"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "sugar_sweetened_beverages"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "soda",
+        "candy",
+        "pastries",
+        "ultra processed snack foods"
+      ],
+      "avoid_raw": [
+        "soda",
+        "candy",
+        "pastries",
+        "ultra-processed snack foods"
+      ],
+      "avoid_foods": [
+        "soda",
+        "candy",
+        "pastries"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts",
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sugar",
+        "low glycemic",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "type_2_diabetes",
+        "type_2_diabetes_prediabetes"
+      ],
+      "references": [
+        "https://www.cdc.gov/diabetes/healthy-eating/fiber-helps-diabetes.html",
+        "https://www.cdc.gov/diabetes/healthy-eating/diabetes-meal-planning.html"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 43,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 4,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "gestational diabetes",
+      "label": "Gestational Diabetes",
+      "beneficial": [
+        "lean proteins",
+        "high fiber carbs",
+        "non starchy vegetables",
+        "whole grains",
+        "nuts",
+        "yogurt"
+      ],
+      "beneficial_raw": [
+        "lean proteins",
+        "high-fiber carbs",
+        "non-starchy vegetables",
+        "whole grains",
+        "nuts",
+        "yogurt"
+      ],
+      "beneficial_foods": [
+        "nuts",
+        "yogurt"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "high_fiber_foods",
+        "whole_grains",
+        "non_starchy_vegetables",
+        "nuts_seeds"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "juice",
+        "white bread",
+        "white rice",
+        "large portions of refined carbs"
+      ],
+      "limit_raw": [
+        "juice",
+        "white bread",
+        "white rice",
+        "large portions of refined carbs"
+      ],
+      "limit_foods": [
+        "juice",
+        "white bread",
+        "white rice"
+      ],
+      "limit_concepts": [
+        "sugar_sweetened_beverages",
+        "refined_grains"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "sugary drinks",
+        "sweets",
+        "desserts",
+        "heavily processed snacks"
+      ],
+      "avoid_raw": [
+        "sugary drinks",
+        "sweets",
+        "desserts",
+        "heavily processed snacks"
+      ],
+      "avoid_foods": [
+        "sweets",
+        "desserts",
+        "heavily processed snacks"
+      ],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts",
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "low sugar",
+        "low glycemic",
+        "high fiber"
+      ],
+      "guideline_aliases": [
+        "type_2_diabetes",
+        "type_2_diabetes_prediabetes"
+      ],
+      "references": [
+        "https://diabetes.org/sites/default/files/2025-07/ADA25-Sample-Meal-Plan-for-GDM-FINAL-7-8-25.pdf",
+        "https://diabetes.org/food-nutrition/understanding-carbs"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 44,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 3,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "rheumatoid arthritis",
+      "label": "Rheumatoid Arthritis",
+      "beneficial": [
+        "fatty fish",
+        "olive oil",
+        "nuts",
+        "seeds",
+        "beans",
+        "fruits",
+        "vegetables",
+        "mediterranean style foods"
+      ],
+      "beneficial_raw": [
+        "fatty fish",
+        "olive oil",
+        "nuts",
+        "seeds",
+        "beans",
+        "fruits",
+        "vegetables",
+        "mediterranean-style foods"
+      ],
+      "beneficial_foods": [
+        "fatty fish",
+        "olive oil",
+        "nuts",
+        "seeds",
+        "beans",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "omega_3_rich_foods",
+        "healthy_unsaturated_fats",
+        "nuts_seeds",
+        "legumes",
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "fish_seafood"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "fried foods",
+        "refined carbs",
+        "omega 6 heavy processed foods"
+      ],
+      "limit_raw": [
+        "fried foods",
+        "refined carbs",
+        "omega-6-heavy processed foods"
+      ],
+      "limit_foods": [
+        "refined carbs"
+      ],
+      "limit_concepts": [
+        "fried_foods",
+        "refined_grains",
+        "highly_processed_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "trans fats and heavily processed snack foods"
+      ],
+      "avoid_raw": [
+        "trans fats and heavily processed snack foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.arthritis.org/health-wellness/treatment/treatment-plan/tracking-your-health/foods-that-can-help-ra-symptoms",
+        "https://www.arthritis.org/health-wellness/healthy-living/nutrition/anti-inflammatory/the-ultimate-arthritis-diet"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 45,
+      "mapping_summary": {
+        "beneficial_food_count": 7,
+        "beneficial_concept_count": 8,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "osteoarthritis",
+      "label": "Osteoarthritis",
+      "beneficial": [
+        "mediterranean style foods",
+        "fish",
+        "olive oil",
+        "nuts",
+        "colorful fruits and vegetables",
+        "beans"
+      ],
+      "beneficial_raw": [
+        "mediterranean-style foods",
+        "fish",
+        "olive oil",
+        "nuts",
+        "colorful fruits and vegetables",
+        "beans"
+      ],
+      "beneficial_foods": [
+        "fish",
+        "olive oil",
+        "nuts",
+        "colorful fruits and vegetables",
+        "beans"
+      ],
+      "beneficial_concepts": [
+        "healthy_unsaturated_fats",
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "fish_seafood",
+        "nuts_seeds",
+        "fruits"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "fried foods",
+        "refined carbohydrates",
+        "excess added sugars"
+      ],
+      "limit_raw": [
+        "fried foods",
+        "refined carbohydrates",
+        "excess added sugars"
+      ],
+      "limit_foods": [
+        "refined carbohydrates"
+      ],
+      "limit_concepts": [
+        "fried_foods",
+        "refined_grains",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "trans fats and heavily processed foods that promote inflammation"
+      ],
+      "avoid_raw": [
+        "trans fats and heavily processed foods that promote inflammation"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "ultra_processed_snack_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.arthritis.org/health-wellness/healthy-living/nutrition/anti-inflammatory/the-ultimate-arthritis-diet",
+        "https://newsnetwork.mayoclinic.org/discussion/home-remedies-how-a-healthy-diet-can-help-manage-pain/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 46,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "asthma",
+      "label": "Asthma",
+      "beneficial": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins",
+        "low fat dairy",
+        "balanced meals"
+      ],
+      "beneficial_raw": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins",
+        "low-fat dairy",
+        "balanced meals"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "lean_proteins",
+        "low_fat_dairy"
+      ],
+      "beneficial_unmapped": [
+        "balanced meals"
+      ],
+      "limit": [
+        "refined foods",
+        "excess caffeine",
+        "alcohol if it worsens symptoms",
+        "processed meats"
+      ],
+      "limit_raw": [
+        "refined foods",
+        "excess caffeine",
+        "alcohol if it worsens symptoms",
+        "processed meats"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "refined_grains",
+        "highly_processed_foods",
+        "caffeinated_beverages",
+        "alcohol",
+        "processed_meats"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "known food allergens if they trigger symptoms or anaphylaxis"
+      ],
+      "avoid_raw": [
+        "known food allergens if they trigger symptoms or anaphylaxis"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "known food allergens if they trigger symptoms or anaphylaxis"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.lung.org/blog/asthma-and-nutrition",
+        "https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/managing-asthma/reduce-asthma-triggers/manage-stress"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 47,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 0,
+        "limit_concept_count": 5,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "chronic obstructive pulmonary disease",
+      "label": "Chronic Obstructive Pulmonary Disease",
+      "beneficial": [
+        "protein rich foods",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "healthy fats",
+        "adequate calories"
+      ],
+      "beneficial_raw": [
+        "protein-rich foods",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "healthy fats",
+        "adequate calories"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [
+        "adequate calories"
+      ],
+      "limit": [
+        "very large meals",
+        "foods that cause bloating",
+        "excess sodium"
+      ],
+      "limit_raw": [
+        "very large meals",
+        "foods that cause bloating",
+        "excess sodium"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "high_sodium_foods"
+      ],
+      "limit_unmapped": [
+        "very large meals",
+        "foods that cause bloating"
+      ],
+      "avoid": [
+        "highly processed salty foods and sugary drinks if they displace nutrient dense foods"
+      ],
+      "avoid_raw": [
+        "highly processed salty foods and sugary drinks if they displace nutrient-dense foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "highly_processed_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.copdfoundation.org/Learn-More/I-am-a-Person-with-COPD/Nutrition-for-Someone-with-COPD.aspx",
+        "https://www.copdfoundation.org/COPD360social/Community/Questions-and-Answers/Check-in-Eating-Well-to-Support-Your-Breathing.aspx"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 48,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 0,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 2,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "migraine",
+      "label": "Migraine",
+      "beneficial": [
+        "water",
+        "balanced meals",
+        "magnesium rich foods"
+      ],
+      "beneficial_raw": [
+        "water",
+        "balanced meals",
+        "magnesium-rich foods"
+      ],
+      "beneficial_foods": [
+        "water"
+      ],
+      "beneficial_concepts": [
+        "magnesium_rich_foods"
+      ],
+      "beneficial_unmapped": [
+        "balanced meals"
+      ],
+      "limit": [
+        "caffeine",
+        "alcohol",
+        "chocolate",
+        "soft cheeses",
+        "processed meats"
+      ],
+      "limit_raw": [
+        "caffeine",
+        "alcohol",
+        "chocolate",
+        "soft cheeses",
+        "processed meats"
+      ],
+      "limit_foods": [
+        "caffeine",
+        "alcohol",
+        "chocolate",
+        "soft cheeses"
+      ],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "alcohol",
+        "full_fat_dairy",
+        "processed_meats"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "personal trigger foods",
+        "fasting or skipping meals"
+      ],
+      "avoid_raw": [
+        "personal trigger foods",
+        "fasting or skipping meals"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "personal trigger foods",
+        "fasting or skipping meals"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+        "https://migrainetrust.org/tips-to-manage-your-migraine-this-holiday-season/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 49,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 1,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 4,
+        "limit_concept_count": 4,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 2
+      }
+    },
+    {
+      "value": "parkinsons disease",
+      "label": "Parkinson's Disease",
+      "beneficial": [
+        "whole food meals",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "fiber rich foods",
+        "healthy fats"
+      ],
+      "beneficial_raw": [
+        "whole-food meals",
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "fiber-rich foods",
+        "healthy fats"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "high_fiber_foods",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [
+        "whole food meals"
+      ],
+      "limit": [
+        "high fat meals and large protein loads close to levodopa if they impair medication response"
+      ],
+      "limit_raw": [
+        "high-fat meals and large protein loads close to levodopa if they impair medication response"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [],
+      "limit_unmapped": [
+        "high fat meals and large protein loads close to levodopa if they impair medication response"
+      ],
+      "avoid": [
+        "protein heavy meals timed with levodopa if they consistently reduce medication effect"
+      ],
+      "avoid_raw": [
+        "protein-heavy meals timed with levodopa if they consistently reduce medication effect"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "protein heavy meals timed with levodopa if they consistently reduce medication effect"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.parkinson.org/living-with-parkinsons/management/diet-nutrition",
+        "https://www.parkinson.org/library/fact-sheets/nutrition"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 50,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 1,
+        "limit_food_count": 0,
+        "limit_concept_count": 0,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "multiple sclerosis",
+      "label": "Multiple Sclerosis",
+      "beneficial": [
+        "fruits",
+        "vegetables",
+        "fiber rich foods",
+        "legumes",
+        "fish",
+        "unsaturated fats",
+        "mediterranean style meals"
+      ],
+      "beneficial_raw": [
+        "fruits",
+        "vegetables",
+        "fiber-rich foods",
+        "legumes",
+        "fish",
+        "unsaturated fats",
+        "mediterranean-style meals"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "legumes",
+        "fish",
+        "unsaturated fats"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "high_fiber_foods",
+        "legumes",
+        "fish_seafood",
+        "healthy_unsaturated_fats",
+        "whole_grains",
+        "nuts_seeds"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "saturated fat",
+        "heavily processed foods",
+        "excess added sugar"
+      ],
+      "limit_raw": [
+        "saturated fat",
+        "heavily processed foods",
+        "excess added sugar"
+      ],
+      "limit_foods": [
+        "saturated fat"
+      ],
+      "limit_concepts": [
+        "highly_processed_foods",
+        "high_sugar_desserts"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "trans fats and chronically poor quality western style diets"
+      ],
+      "avoid_raw": [
+        "trans fats and chronically poor-quality western-style diets"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "ultra_processed_snack_foods",
+        "fast_food"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.nationalmssociety.org/news-and-magazine/momentum-magazine/living-well/listen-to-your-gut",
+        "https://www.nationalmssociety.org/news-and-magazine/momentum-magazine/research-and-science/ms-and-diet-finding-the-links"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 51,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 8,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "psoriasis",
+      "label": "Psoriasis",
+      "beneficial": [
+        "mediterranean style foods",
+        "fruits",
+        "vegetables",
+        "fish",
+        "whole grains",
+        "legumes"
+      ],
+      "beneficial_raw": [
+        "mediterranean-style foods",
+        "fruits",
+        "vegetables",
+        "fish",
+        "whole grains",
+        "legumes"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "fish",
+        "legumes"
+      ],
+      "beneficial_concepts": [
+        "healthy_unsaturated_fats",
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "fish_seafood",
+        "nuts_seeds",
+        "fruits"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "refined sugars",
+        "processed foods",
+        "high fat dairy"
+      ],
+      "limit_raw": [
+        "refined sugars",
+        "processed foods",
+        "high-fat dairy"
+      ],
+      "limit_foods": [
+        "refined sugars"
+      ],
+      "limit_concepts": [
+        "highly_processed_foods",
+        "full_fat_dairy"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "fried foods",
+        "processed meats",
+        "excess alcohol"
+      ],
+      "avoid_raw": [
+        "fried foods",
+        "processed meats",
+        "excess alcohol"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "fried_foods",
+        "processed_meats",
+        "alcohol"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.psoriasis.org/dietary-modifications/",
+        "https://www.psoriasis.org/nutrition-diets-and-psoriatic-disease-transcript/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 52,
+      "mapping_summary": {
+        "beneficial_food_count": 4,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "psoriatic arthritis",
+      "label": "Psoriatic Arthritis",
+      "beneficial": [
+        "mediterranean style foods",
+        "fish",
+        "beans",
+        "olive oil",
+        "fruits",
+        "vegetables",
+        "whole grains"
+      ],
+      "beneficial_raw": [
+        "mediterranean-style foods",
+        "fish",
+        "beans",
+        "olive oil",
+        "fruits",
+        "vegetables",
+        "whole grains"
+      ],
+      "beneficial_foods": [
+        "fish",
+        "beans",
+        "olive oil",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "healthy_unsaturated_fats",
+        "vegetables",
+        "whole_grains",
+        "legumes",
+        "fish_seafood",
+        "nuts_seeds",
+        "fruits"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "red meat",
+        "refined sugars",
+        "processed foods",
+        "excess salt"
+      ],
+      "limit_raw": [
+        "red meat",
+        "refined sugars",
+        "processed foods",
+        "excess salt"
+      ],
+      "limit_foods": [
+        "red meat",
+        "refined sugars"
+      ],
+      "limit_concepts": [
+        "red_meat",
+        "highly_processed_foods",
+        "high_sodium_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "fried foods",
+        "processed meats",
+        "excess alcohol"
+      ],
+      "avoid_raw": [
+        "fried foods",
+        "processed meats",
+        "excess alcohol"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "fried_foods",
+        "processed_meats",
+        "alcohol"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.psoriasis.org/advance/psoriatic-arthritis-diet/",
+        "https://www.psoriasis.org/nutrition-diets-and-psoriatic-disease-transcript/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 53,
+      "mapping_summary": {
+        "beneficial_food_count": 5,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 3,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "age-related macular degeneration",
+      "label": "Age-Related Macular Degeneration",
+      "beneficial": [
+        "dark leafy greens",
+        "fish rich in omega 3s",
+        "colorful vegetables",
+        "eggs",
+        "nuts"
+      ],
+      "beneficial_raw": [
+        "dark leafy greens",
+        "fish rich in omega-3s",
+        "colorful vegetables",
+        "eggs",
+        "nuts"
+      ],
+      "beneficial_foods": [
+        "colorful vegetables",
+        "eggs",
+        "nuts"
+      ],
+      "beneficial_concepts": [
+        "leafy_greens",
+        "omega_3_rich_foods",
+        "fish_seafood",
+        "vegetables",
+        "nuts_seeds"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "highly processed snack foods",
+        "low produce diets"
+      ],
+      "limit_raw": [
+        "highly processed snack foods",
+        "low-produce diets"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "ultra_processed_snack_foods"
+      ],
+      "limit_unmapped": [
+        "low produce diets"
+      ],
+      "avoid": [
+        "diets dominated by processed foods and excess linoleic acid rich junk food"
+      ],
+      "avoid_raw": [
+        "diets dominated by processed foods and excess linoleic-acid-rich junk food"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "highly_processed_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.macular.org/about-macular-degeneration/what-is-macular-degeneration/reduce-your-risk/ten-things-you-can-do-improve-your-vision",
+        "https://www.macular.org/about-macular-degeneration/what-is-macular-degeneration/risk-factors/poor-diet"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 54,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "glaucoma",
+      "label": "Glaucoma",
+      "beneficial": [
+        "fruits",
+        "vegetables",
+        "leafy greens",
+        "whole grains",
+        "fish",
+        "magnesium rich foods"
+      ],
+      "beneficial_raw": [
+        "fruits",
+        "vegetables",
+        "leafy greens",
+        "whole grains",
+        "fish",
+        "magnesium-rich foods"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables",
+        "fish"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "leafy_greens",
+        "whole_grains",
+        "fish_seafood",
+        "magnesium_rich_foods"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "saturated fats",
+        "trans fats",
+        "poor quality low produce diets"
+      ],
+      "limit_raw": [
+        "saturated fats",
+        "trans fats",
+        "poor-quality low-produce diets"
+      ],
+      "limit_foods": [
+        "saturated fats",
+        "trans fats"
+      ],
+      "limit_concepts": [],
+      "limit_unmapped": [
+        "poor quality low produce diets"
+      ],
+      "avoid": [
+        "highly processed foods that worsen cardiovascular risk factors"
+      ],
+      "avoid_raw": [
+        "highly processed foods that worsen cardiovascular risk factors"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "ultra_processed_snack_foods",
+        "high_sodium_foods"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://glaucoma.org/articles/can-diet-affect-glaucoma",
+        "https://glaucoma.org/articles/what-vitamins-and-nutrients-will-help-prevent-my-glaucoma-from-worsening"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 55,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 2,
+        "limit_concept_count": 0,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "cataracts",
+      "label": "Cataracts",
+      "beneficial": [
+        "leafy greens",
+        "fruits",
+        "antioxidant rich vegetables",
+        "foods rich in vitamins c and e"
+      ],
+      "beneficial_raw": [
+        "leafy greens",
+        "fruits",
+        "antioxidant-rich vegetables",
+        "foods rich in vitamins c and e"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "antioxidant rich vegetables"
+      ],
+      "beneficial_concepts": [
+        "leafy_greens",
+        "fruits",
+        "vegetables",
+        "vitamin_c_rich_produce"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "nutrient poor processed foods"
+      ],
+      "limit_raw": [
+        "nutrient-poor processed foods"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "highly_processed_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "chronically poor produce intake and smoking linked unhealthy diet patterns"
+      ],
+      "avoid_raw": [
+        "chronically poor produce intake and smoking-linked unhealthy diet patterns"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "chronically poor produce intake and smoking linked unhealthy diet patterns"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.nei.nih.gov/sites/default/files/2019-05/WTV_FactSheet_Cataract.pdf",
+        "https://www.nei.nih.gov/sites/default/files/2023-02/Don%27t_lose_sight_of_cataract.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 56,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "pcos",
+      "label": "Polycystic Ovary Syndrome",
+      "beneficial": [
+        "low glycemic high fiber carbs",
+        "whole grains",
+        "beans",
+        "vegetables",
+        "lean proteins",
+        "nuts and seeds"
+      ],
+      "beneficial_raw": [
+        "low-glycemic high-fiber carbs",
+        "whole grains",
+        "beans",
+        "vegetables",
+        "lean proteins",
+        "nuts and seeds"
+      ],
+      "beneficial_foods": [
+        "beans",
+        "vegetables",
+        "nuts and seeds"
+      ],
+      "beneficial_concepts": [
+        "high_fiber_foods",
+        "whole_grains",
+        "legumes",
+        "vegetables",
+        "lean_proteins",
+        "nuts_seeds"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "refined grains",
+        "sweetened foods",
+        "highly processed foods"
+      ],
+      "limit_raw": [
+        "refined grains",
+        "sweetened foods",
+        "highly processed foods"
+      ],
+      "limit_foods": [
+        "refined grains"
+      ],
+      "limit_concepts": [
+        "refined_grains",
+        "high_sugar_desserts",
+        "highly_processed_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "sugary drinks and desserts that sharply raise insulin"
+      ],
+      "avoid_raw": [
+        "sugary drinks and desserts that sharply raise insulin"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [
+        "sugar_sweetened_beverages",
+        "high_sugar_desserts"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [
+        "high fiber",
+        "low glycemic"
+      ],
+      "guideline_aliases": [
+        "baseline"
+      ],
+      "references": [
+        "https://www.pcoschallenge.org/symposium/2016-philadelphia-presentations/lifestyle-management-for-pcos-grassi.pdf",
+        "https://pcoschallenge.org/symposium/2017-atlanta-presentations/pcos-nutrition-mckittrick.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 57,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 6,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 1,
+        "limit_concept_count": 3,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 2,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "iron-deficiency anemia",
+      "label": "Iron-Deficiency Anemia",
+      "beneficial": [
+        "beans",
+        "dried fruits",
+        "eggs",
+        "lean red meat",
+        "salmon",
+        "iron fortified cereals",
+        "tofu",
+        "leafy greens",
+        "vitamin c rich produce"
+      ],
+      "beneficial_raw": [
+        "beans",
+        "dried fruits",
+        "eggs",
+        "lean red meat",
+        "salmon",
+        "iron-fortified cereals",
+        "tofu",
+        "leafy greens",
+        "vitamin c-rich produce"
+      ],
+      "beneficial_foods": [
+        "beans",
+        "dried fruits",
+        "eggs",
+        "lean red meat",
+        "salmon",
+        "iron fortified cereals",
+        "tofu"
+      ],
+      "beneficial_concepts": [
+        "legumes",
+        "fruits",
+        "red_meat",
+        "fish_seafood",
+        "iron_rich_foods",
+        "leafy_greens",
+        "vitamin_c_rich_produce"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "tea or coffee with iron rich meals",
+        "low iron diets"
+      ],
+      "limit_raw": [
+        "tea or coffee with iron-rich meals if they reduce iron absorption",
+        "low-iron diets"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "caffeinated_beverages",
+        "iron_rich_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "chronic intake patterns that displace iron rich foods"
+      ],
+      "avoid_raw": [
+        "chronic intake patterns that displace iron-rich foods"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "chronic intake patterns that displace iron rich foods"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.nhlbi.nih.gov/health/anemia/iron-deficiency-anemia",
+        "https://www.nhlbi.nih.gov/sites/default/files/publications/11-7629.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 58,
+      "mapping_summary": {
+        "beneficial_food_count": 7,
+        "beneficial_concept_count": 7,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "vitamin b12 deficiency anemia",
+      "label": "Vitamin B12 Deficiency Anemia",
+      "beneficial": [
+        "fish",
+        "meat",
+        "eggs",
+        "dairy",
+        "fortified cereals",
+        "fortified plant milk"
+      ],
+      "beneficial_raw": [
+        "fish",
+        "meat",
+        "eggs",
+        "dairy",
+        "fortified cereals",
+        "fortified plant milk"
+      ],
+      "beneficial_foods": [
+        "fish",
+        "meat",
+        "eggs",
+        "dairy",
+        "fortified cereals",
+        "fortified plant milk"
+      ],
+      "beneficial_concepts": [
+        "fish_seafood"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "very low b12 eating patterns without replacement or supplementation"
+      ],
+      "limit_raw": [
+        "very low-b12 eating patterns without replacement or supplementation"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [],
+      "limit_unmapped": [
+        "very low b12 eating patterns without replacement or supplementation"
+      ],
+      "avoid": [
+        "self restrictive diets that eliminate b12 sources"
+      ],
+      "avoid_raw": [
+        "self-restrictive diets that eliminate b12 sources"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "self restrictive diets that eliminate b12 sources"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.nhlbi.nih.gov/health/anemia/treatment",
+        "https://www.nhlbi.nih.gov/sites/default/files/publications/11-7629.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 59,
+      "mapping_summary": {
+        "beneficial_food_count": 6,
+        "beneficial_concept_count": 1,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 0,
+        "limit_unmapped_count": 1,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "cystic fibrosis",
+      "label": "Cystic Fibrosis",
+      "beneficial": [
+        "high calorie meals",
+        "adequate protein",
+        "healthy fats",
+        "nutrient dense snacks",
+        "prescribed vitamins"
+      ],
+      "beneficial_raw": [
+        "high-calorie meals",
+        "adequate protein",
+        "healthy fats",
+        "nutrient-dense snacks",
+        "prescribed vitamins"
+      ],
+      "beneficial_foods": [
+        "nutrient dense snacks"
+      ],
+      "beneficial_concepts": [
+        "lean_proteins",
+        "healthy_unsaturated_fats"
+      ],
+      "beneficial_unmapped": [
+        "high calorie meals",
+        "prescribed vitamins"
+      ],
+      "limit": [
+        "low calorie intake",
+        "skipped meals"
+      ],
+      "limit_raw": [
+        "low-calorie intake",
+        "skipped meals"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [],
+      "limit_unmapped": [
+        "low calorie intake",
+        "skipped meals"
+      ],
+      "avoid": [
+        "chronic under eating that fails to meet calorie or protein needs"
+      ],
+      "avoid_raw": [
+        "chronic under-eating that fails to meet calorie or protein needs"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "chronic under eating that fails to meet calorie or protein needs"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://www.cff.org/managing-cf/healthy-high-calorie-eating",
+        "https://www.cff.org/managing-cf/getting-your-nutrients"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 60,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 2,
+        "limit_food_count": 0,
+        "limit_concept_count": 0,
+        "limit_unmapped_count": 2,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "hiv aids",
+      "label": "HIV/AIDS",
+      "beneficial": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins"
+      ],
+      "beneficial_raw": [
+        "fruits",
+        "vegetables",
+        "whole grains",
+        "lean proteins"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "whole_grains",
+        "lean_proteins"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "highly processed foods if they displace nutrient dense foods"
+      ],
+      "limit_raw": [
+        "highly processed foods if they displace nutrient-dense foods"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "highly_processed_foods"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "unsafe foods or poor food safety practices that increase infection risk"
+      ],
+      "avoid_raw": [
+        "unsafe foods or poor food safety practices that increase infection risk"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "unsafe foods or poor food safety practices that increase infection risk"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://hivinfo.nih.gov/understanding-hiv/fact-sheets/hiv-and-nutrition-and-food-safety"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 61,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 4,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "phenylketonuria",
+      "label": "Phenylketonuria",
+      "beneficial": [
+        "low phenylalanine foods",
+        "fruits",
+        "many vegetables",
+        "prescribed low protein products"
+      ],
+      "beneficial_raw": [
+        "low-phenylalanine foods",
+        "fruits",
+        "many vegetables",
+        "prescribed low-protein products"
+      ],
+      "beneficial_foods": [
+        "fruits"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [
+        "low phenylalanine foods",
+        "prescribed low protein products"
+      ],
+      "limit": [
+        "nuts",
+        "beans",
+        "grains",
+        "dairy",
+        "eggs",
+        "meat"
+      ],
+      "limit_raw": [
+        "nuts",
+        "beans",
+        "grains",
+        "dairy",
+        "eggs",
+        "meat depending on individualized phenylalanine allowance"
+      ],
+      "limit_foods": [
+        "nuts",
+        "beans",
+        "grains",
+        "dairy",
+        "eggs",
+        "meat"
+      ],
+      "limit_concepts": [
+        "nuts_seeds",
+        "legumes"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "aspartame",
+        "regular high protein foods such as meat",
+        "fish",
+        "eggs",
+        "and dairy"
+      ],
+      "avoid_raw": [
+        "aspartame",
+        "regular high-protein foods such as meat",
+        "fish",
+        "eggs",
+        "and dairy unless specifically allowed"
+      ],
+      "avoid_foods": [
+        "aspartame",
+        "fish",
+        "eggs",
+        "and dairy"
+      ],
+      "avoid_concepts": [
+        "fish_seafood"
+      ],
+      "avoid_unmapped": [
+        "regular high protein foods such as meat"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://medlineplus.gov/genetics/condition/phenylketonuria/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 62,
+      "mapping_summary": {
+        "beneficial_food_count": 1,
+        "beneficial_concept_count": 2,
+        "beneficial_unmapped_count": 2,
+        "limit_food_count": 6,
+        "limit_concept_count": 2,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 4,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 1
+      }
+    },
+    {
+      "value": "galactosemia",
+      "label": "Galactosemia",
+      "beneficial": [
+        "soy formula or other lactose free formula",
+        "calcium fortified non dairy substitutes",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_raw": [
+        "soy formula or other lactose-free formula",
+        "calcium-fortified non-dairy substitutes",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_foods": [
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "calcium_rich_foods",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_unmapped": [],
+      "limit": [
+        "foods containing lactose or galactose"
+      ],
+      "limit_raw": [
+        "foods containing lactose or galactose"
+      ],
+      "limit_foods": [],
+      "limit_concepts": [
+        "lactose_containing_dairy"
+      ],
+      "limit_unmapped": [],
+      "avoid": [
+        "breast milk",
+        "cow s milk",
+        "dairy products",
+        "milk containing formulas"
+      ],
+      "avoid_raw": [
+        "breast milk",
+        "cow's milk",
+        "dairy products",
+        "milk-containing formulas"
+      ],
+      "avoid_foods": [
+        "breast milk",
+        "cow s milk",
+        "milk containing formulas"
+      ],
+      "avoid_concepts": [
+        "lactose_containing_dairy"
+      ],
+      "avoid_unmapped": [],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://medlineplus.gov/ency/article/000366.htm",
+        "https://medlineplus.gov/lab-tests/galactosemia-tests/"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 63,
+      "mapping_summary": {
+        "beneficial_food_count": 2,
+        "beneficial_concept_count": 3,
+        "beneficial_unmapped_count": 0,
+        "limit_food_count": 0,
+        "limit_concept_count": 1,
+        "limit_unmapped_count": 0,
+        "avoid_food_count": 3,
+        "avoid_concept_count": 1,
+        "avoid_unmapped_count": 0
+      }
+    },
+    {
+      "value": "sickle cell disease",
+      "label": "Sickle Cell Disease",
+      "beneficial": [
+        "water",
+        "fruits",
+        "vegetables",
+        "folate rich foods",
+        "balanced meals",
+        "adequate calories"
+      ],
+      "beneficial_raw": [
+        "water",
+        "fruits",
+        "vegetables",
+        "folate-rich foods",
+        "balanced meals",
+        "adequate calories"
+      ],
+      "beneficial_foods": [
+        "water",
+        "fruits",
+        "vegetables"
+      ],
+      "beneficial_concepts": [
+        "fruits",
+        "vegetables",
+        "leafy_greens",
+        "legumes",
+        "whole_grains"
+      ],
+      "beneficial_unmapped": [
+        "balanced meals",
+        "adequate calories"
+      ],
+      "limit": [
+        "iron containing supplements unless prescribed",
+        "dehydration",
+        "poor quality diets"
+      ],
+      "limit_raw": [
+        "iron-containing supplements unless prescribed",
+        "dehydration",
+        "poor-quality diets"
+      ],
+      "limit_foods": [
+        "dehydration"
+      ],
+      "limit_concepts": [],
+      "limit_unmapped": [
+        "iron containing supplements unless prescribed",
+        "poor quality diets"
+      ],
+      "avoid": [
+        "dehydration and vitamins with extra iron unless the care team recommends them"
+      ],
+      "avoid_raw": [
+        "dehydration and vitamins with extra iron unless the care team recommends them"
+      ],
+      "avoid_foods": [],
+      "avoid_concepts": [],
+      "avoid_unmapped": [
+        "dehydration and vitamins with extra iron unless the care team recommends them"
+      ],
+      "weights": {
+        "favor": 0.15,
+        "limit": 0.12,
+        "dietary_tag": 0.1
+      },
+      "dietary_tag_hints": [],
+      "guideline_aliases": [],
+      "references": [
+        "https://sicklecelldisease.org/file_download.php?link=https%3A%2F%2Fsicklecelldisease.org%2Fwp-content%2Fuploads%2Fdocumentmanager%2FResources+%26+Educational+Materials%2FSickle+Cell+101%2FCollege+Bound+with+SCD%2F9+Tips+to+Living+Well+with+SCD+in+College.pdf"
+      ],
+      "sheet": "Disease_based_Nutrition_data_de",
+      "row_number": 64,
+      "mapping_summary": {
+        "beneficial_food_count": 3,
+        "beneficial_concept_count": 5,
+        "beneficial_unmapped_count": 2,
+        "limit_food_count": 1,
+        "limit_concept_count": 0,
+        "limit_unmapped_count": 2,
+        "avoid_food_count": 0,
+        "avoid_concept_count": 0,
+        "avoid_unmapped_count": 1
+      }
+    }
+  ],
+  "alias_map": {
+    "cardiovascular disease": "cardiovascular disease",
+    "hypertension": "hypertension",
+    "type 2 diabetes": "type 2 diabetes",
+    "cancer general": "cancer general",
+    "cancer": "cancer general",
+    "breast cancer": "breast cancer",
+    "colorectal cancer": "colorectal cancer",
+    "prostate cancer": "prostate cancer",
+    "obesity weight management": "obesity weight management",
+    "stroke": "stroke",
+    "alzheimers cognitive decline": "alzheimers cognitive decline",
+    "alzheimer": "alzheimers cognitive decline",
+    "bone health osteoporosis": "bone health osteoporosis",
+    "eye health": "eye health",
+    "gastrointestinal health": "gastrointestinal health",
+    "inflammation": "inflammation",
+    "metabolic syndrome": "metabolic syndrome",
+    "chronic kidney disease": "chronic kidney disease",
+    "kidney failure": "kidney failure",
+    "hemodialysis": "hemodialysis",
+    "kidney stones": "kidney stones",
+    "gout": "gout",
+    "gerd": "gastrointestinal health",
+    "barretts esophagus": "barretts esophagus",
+    "celiac disease": "celiac disease",
+    "ibs": "gastrointestinal health",
+    "irritable bowel syndrome": "ibs",
+    "crohns disease": "crohns disease",
+    "ulcerative colitis": "ulcerative colitis",
+    "diverticular disease": "diverticular disease",
+    "pancreatitis": "pancreatitis",
+    "gallstones": "gallstones",
+    "lactose intolerance": "lactose intolerance",
+    "constipation": "constipation",
+    "gastroparesis": "gastroparesis",
+    "functional dyspepsia": "functional dyspepsia",
+    "hemorrhoids": "hemorrhoids",
+    "dumping syndrome": "dumping syndrome",
+    "hemochromatosis": "hemochromatosis",
+    "nonalcoholic fatty liver disease": "nonalcoholic fatty liver disease",
+    "cirrhosis": "cirrhosis",
+    "heart failure": "heart failure",
+    "high ldl cholesterol hyperlipidemia": "high ldl cholesterol hyperlipidemia",
+    "hypertriglyceridemia": "hypertriglyceridemia",
+    "prediabetes": "prediabetes",
+    "gestational diabetes": "gestational diabetes",
+    "rheumatoid arthritis": "rheumatoid arthritis",
+    "osteoarthritis": "osteoarthritis",
+    "asthma": "asthma",
+    "chronic obstructive pulmonary disease": "chronic obstructive pulmonary disease",
+    "migraine": "migraine",
+    "parkinsons disease": "parkinsons disease",
+    "multiple sclerosis": "multiple sclerosis",
+    "psoriasis": "psoriasis",
+    "psoriatic arthritis": "psoriatic arthritis",
+    "age-related macular degeneration": "age-related macular degeneration",
+    "glaucoma": "glaucoma",
+    "cataracts": "cataracts",
+    "pcos": "pcos",
+    "polycystic ovary syndrome": "pcos",
+    "iron-deficiency anemia": "iron-deficiency anemia",
+    "vitamin b12 deficiency anemia": "vitamin b12 deficiency anemia",
+    "cystic fibrosis": "cystic fibrosis",
+    "hiv aids": "hiv aids",
+    "phenylketonuria": "phenylketonuria",
+    "galactosemia": "galactosemia",
+    "sickle cell disease": "sickle cell disease",
+    "diabetes": "type 2 diabetes",
+    "heart disease": "cardiovascular disease",
+    "high cholesterol": "cardiovascular disease",
+    "obesity": "obesity weight management",
+    "kidney disease": "metabolic syndrome",
+    "acid reflux": "gerd",
+    "high ldl cholesterol": "high ldl cholesterol hyperlipidemia",
+    "hyperlipidemia": "high ldl cholesterol hyperlipidemia"
+  }
+}
