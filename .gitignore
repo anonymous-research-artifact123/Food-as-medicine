@@ -1,0 +1,6 @@
+.env
+runs/
+dataset/task2_images/
+__pycache__/
+*.pyc
+.venv/

@@ -1,25 +1,17 @@
-# Python >= 3.10 required.
+# Python >= 3.10
 
 # --- LLM API clients ---
-openai>=1.30.0
-anthropic>=0.30.0
-google-generativeai>=0.5.0
+openai>=1.40.0          # OpenAI, Gemini (OpenAI-compatible) and vLLM endpoints
+anthropic>=0.40.0       # Claude (Task 1; Task 2 calls the HTTP API directly)
 
-# --- HTTP + image processing ---
+# --- HTTP + image handling ---
 requests>=2.31.0
 Pillow>=10.0.0
-# Optional: only needed for image (vision) runs whose source image is AVIF and
-# must be decoded locally to JPEG (Anthropic vision; any --image-source that
-# normalizes bytes). OpenAI/Gemini url_only runs pass the URL through and do
-# not need it. Uncomment for vision reproduction.
+# Optional: decode AVIF photos for providers that need JPEG.
 # pillow-avif-plugin>=1.4.0
 
-# --- Config / env ---
-python-dotenv==1.0.1
-PyYAML==6.0.2
+# --- Config ---
+python-dotenv>=1.0.0
 
-# --- Optional: local vision-LM inference via vLLM ---
-# Uncomment if you want to reproduce the Gemma-3-12B / Qwen-3-VL-8B rows.
-# vllm>=0.6.0
-# transformers>=4.44.0
-# torch>=2.3.0
+# --- Optional: serve the open-weight models locally ---
+# vllm>=0.10.0

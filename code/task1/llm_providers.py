@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Unified LLM provider layer for Q2 benchmark experiments.
+Unified LLM provider layer for the FAM-Bench Task 1 runner.
 
 Goal
 ----
@@ -21,16 +21,24 @@ Adding a new provider
 
 Provider keys recognized
 ------------------------
-- openai      OPENAI_API_KEY              (GPT-5.4, native OpenAI endpoint)
-- anthropic   ANTHROPIC_API_KEY           (Claude Sonnet 4.6, native SDK)
-- gemini      GEMINI_API_KEY              (Gemini 2.5 Pro, OpenAI-compat)
-- vllm        VLLM_API_KEY                (local vLLM: Qwen3-VL-8B-Instruct, Gemma-3-12B-IT)
+- openai      OPENAI_API_KEY              (gpt-4.1 / gpt-4o / gpt-5 ...)
+- anthropic   ANTHROPIC_API_KEY           (claude-* models, native SDK)
+- gemini      GEMINI_API_KEY              (Google AI Studio, OpenAI-compat)
+- deepseek    DEEPSEEK_API_KEY            (deepseek-chat / deepseek-reasoner)
+- moonshot    MOONSHOT_API_KEY            (Kimi: moonshot-v1-*)
+- qwen        DASHSCOPE_API_KEY           (Alibaba Qwen: qwen-max / qwen-plus)
+- xai         XAI_API_KEY                 (grok-* models)
+- mistral     MISTRAL_API_KEY             (mistral-large-latest, etc.)
+- groq        GROQ_API_KEY                (Groq hosted Llama / Mixtral)
+- vllm        VLLM_API_KEY                (local vLLM OpenAI-compatible server at
+                                           VLLM_BASE_URL, default http://localhost:8000/v1)
 """
 from __future__ import annotations
 
 import json
 import os
 import re
+import threading
 from dataclasses import dataclass
 from typing import Any, Optional
 
@@ -66,10 +74,44 @@ PROVIDERS: dict[str, ProviderSpec] = {
         name="gemini",
         api_key_env="GEMINI_API_KEY",
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-        default_model="gemini-2.5-pro",
+        default_model="gemini-2.5-flash",
     ),
-    # Open-weight models (Qwen3-VL-8B-Instruct, Gemma-3-12B-IT) are served
-    # locally via vLLM rather than through any vendor cloud API.
+    "deepseek": ProviderSpec(
+        name="deepseek",
+        api_key_env="DEEPSEEK_API_KEY",
+        base_url="https://api.deepseek.com",
+        default_model="deepseek-chat",
+    ),
+    "moonshot": ProviderSpec(
+        name="moonshot",
+        api_key_env="MOONSHOT_API_KEY",
+        base_url="https://api.moonshot.cn/v1",
+        default_model="moonshot-v1-32k",
+    ),
+    "qwen": ProviderSpec(
+        name="qwen",
+        api_key_env="DASHSCOPE_API_KEY",
+        base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+        default_model="qwen-plus",
+    ),
+    "xai": ProviderSpec(
+        name="xai",
+        api_key_env="XAI_API_KEY",
+        base_url="https://api.x.ai/v1",
+        default_model="grok-2-latest",
+    ),
+    "mistral": ProviderSpec(
+        name="mistral",
+        api_key_env="MISTRAL_API_KEY",
+        base_url="https://api.mistral.ai/v1",
+        default_model="mistral-large-latest",
+    ),
+    "groq": ProviderSpec(
+        name="groq",
+        api_key_env="GROQ_API_KEY",
+        base_url="https://api.groq.com/openai/v1",
+        default_model="llama-3.3-70b-versatile",
+    ),
     "vllm": ProviderSpec(
         name="vllm",
         api_key_env="VLLM_API_KEY",
@@ -81,7 +123,7 @@ PROVIDERS: dict[str, ProviderSpec] = {
 
 # Providers whose Chat Completions accept `response_format={"type":"json_object"}`.
 # The rest fall back to prompt-only JSON instruction.
-_JSON_MODE_PROVIDERS = {"openai", "gemini", "vllm"}
+_JSON_MODE_PROVIDERS = {"openai", "deepseek", "moonshot", "qwen", "mistral", "groq", "gemini", "vllm"}
 
 
 def resolve_provider(model: str, explicit: Optional[str] = None) -> ProviderSpec:
@@ -96,10 +138,21 @@ def resolve_provider(model: str, explicit: Optional[str] = None) -> ProviderSpec
     inferred_order = [
         ("claude", "anthropic"),
         ("gemini", "gemini"),
-        ("gpt", "openai"),
-        # Open-weight models are served locally through vLLM.
+        ("deepseek", "deepseek"),
+        ("moonshot", "moonshot"),
+        ("kimi", "moonshot"),
+        # Open-weight models (Qwen3-VL, Qwen3.5, Gemma 3/4) are served locally
+        # through vLLM; pass --provider qwen to use Alibaba's hosted API instead.
         ("qwen", "vllm"),
         ("gemma", "vllm"),
+        ("grok", "xai"),
+        ("mistral", "mistral"),
+        ("mixtral", "groq"),
+        ("llama", "groq"),
+        ("gpt", "openai"),
+        ("o1", "openai"),
+        ("o3", "openai"),
+        ("o4", "openai"),
     ]
     for needle, key in inferred_order:
         if needle in lower:
@@ -113,12 +166,21 @@ def resolve_provider(model: str, explicit: Optional[str] = None) -> ProviderSpec
 
 _CLIENT_CACHE: dict[str, Any] = {}
 
+# Both SDKs retry transient failures themselves (connection errors, timeouts,
+# 408/409/429/5xx) with exponential backoff and honour Retry-After, but only
+# twice by default -- too few for a 16-way sweep that hits a rate limit. A call
+# that still fails is not scored: the runner refuses to write results until
+# every row has a real answer (see run_task1.py --resume).
+_SDK_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "8"))
+
 
 def build_client(provider: ProviderSpec) -> Any:
     if provider.name in _CLIENT_CACHE:
         return _CLIENT_CACHE[provider.name]
 
     api_key = os.getenv(provider.api_key_env, "").strip()
+    if not api_key and provider.name == "vllm":
+        api_key = "EMPTY"  # a local vLLM server does not check the key
     if not api_key:
         raise RuntimeError(
             f"Missing API key for provider '{provider.name}'. "
@@ -132,7 +194,7 @@ def build_client(provider: ProviderSpec) -> Any:
             raise RuntimeError(
                 "Anthropic SDK not installed. `pip install anthropic`"
             ) from exc
-        client = Anthropic(api_key=api_key)
+        client = Anthropic(api_key=api_key, max_retries=_SDK_MAX_RETRIES)
     else:
         try:
             from openai import OpenAI
@@ -140,7 +202,7 @@ def build_client(provider: ProviderSpec) -> Any:
             raise RuntimeError(
                 "OpenAI SDK not installed. `pip install openai`"
             ) from exc
-        kwargs: dict[str, Any] = {"api_key": api_key}
+        kwargs: dict[str, Any] = {"api_key": api_key, "max_retries": _SDK_MAX_RETRIES}
         if provider.base_url:
             kwargs["base_url"] = provider.base_url
         # Per-provider base_url overrides (e.g. remote vLLM host).
@@ -152,6 +214,96 @@ def build_client(provider: ProviderSpec) -> Any:
 
     _CLIENT_CACHE[provider.name] = client
     return client
+
+
+# ---------------------------------------------------------------------------
+# Per-model parameter adaptation
+# ---------------------------------------------------------------------------
+# Providers disagree about which Chat Completions parameters they accept, and
+# the disagreement is per *model*, not per provider: gpt-4.1 takes `max_tokens`
+# while gpt-5.x rejects it and wants `max_completion_tokens`. Instead of a
+# hard-coded model table that goes stale, we learn each rejection from the
+# API's own 400 on the first call and remember it for the rest of the process,
+# so a 1500-sample sweep pays the probe once per worker rather than once per
+# sample.
+#
+# The token cap is *renamed*, never silently dropped, so runs stay comparable
+# across providers: a model that only knows `max_completion_tokens` still runs
+# under the cap the caller asked for. The cap is given up only if the provider
+# rejects it under both spellings, and that is recorded as "dropped" so the
+# runner can say so in its metadata.
+
+_ADAPT_LOCK = threading.Lock()
+_PARAM_ADAPTATIONS: dict[str, dict[str, Any]] = {}
+
+_MAX_PARAM_RETRIES = 4
+
+
+def get_param_adaptations(provider_name: str, model: str) -> dict[str, Any]:
+    """Report which parameters this (provider, model) actually accepted.
+
+    Empty dict means everything the caller requested went through as-is.
+    Otherwise keys are ``token_param`` ("max_completion_tokens" or "dropped"),
+    ``temperature_dropped`` and ``response_format_dropped``. Runners record
+    this so saved metadata reflects the config the run really executed under,
+    not merely the one it asked for.
+    """
+    with _ADAPT_LOCK:
+        return dict(_PARAM_ADAPTATIONS.get(f"{provider_name}:{model}", {}))
+
+
+def _record_adaptation(provider_name: str, model: str, field: str, value: Any) -> None:
+    with _ADAPT_LOCK:
+        _PARAM_ADAPTATIONS.setdefault(f"{provider_name}:{model}", {})[field] = value
+
+
+def _param_rejected(err: str, param: str) -> bool:
+    return param in err and (
+        "unsupported" in err or "unknown" in err or "not supported" in err
+    )
+
+
+def _adapt_kwargs_after_error(
+    provider_name: str,
+    model: str,
+    kwargs: dict[str, Any],
+    exc: Exception,
+) -> bool:
+    """Rename or strip one rejected parameter in `kwargs` (in place).
+
+    Returns True if something changed and the call is worth retrying, False if
+    the error is not a parameter-compatibility problem and should propagate.
+    """
+    err = str(exc).lower()
+
+    # gpt-5.x / o-series: the completion cap moved to `max_completion_tokens`.
+    # Rename rather than drop so the run keeps the cap it asked for.
+    if "max_completion_tokens" in err and "max_tokens" in kwargs:
+        kwargs["max_completion_tokens"] = kwargs.pop("max_tokens")
+        _record_adaptation(provider_name, model, "token_param", "max_completion_tokens")
+        return True
+
+    # Some providers (certain Gemini models via OpenAI-compat) reject the cap
+    # under either spelling; give it up and let the model's own default apply.
+    if _param_rejected(err, "max_tokens") or _param_rejected(err, "max_completion_tokens"):
+        for key in ("max_tokens", "max_completion_tokens"):
+            if key in kwargs:
+                kwargs.pop(key)
+                _record_adaptation(provider_name, model, "token_param", "dropped")
+                return True
+
+    # Newer reasoning models only accept their default temperature.
+    if _param_rejected(err, "temperature") and "temperature" in kwargs:
+        kwargs.pop("temperature")
+        _record_adaptation(provider_name, model, "temperature_dropped", True)
+        return True
+
+    if ("response_format" in err or "json_object" in err) and "response_format" in kwargs:
+        kwargs.pop("response_format")
+        _record_adaptation(provider_name, model, "response_format_dropped", True)
+        return True
+
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -229,34 +381,36 @@ def _chat_openai_compatible(
         {"role": "system", "content": system},
         {"role": "user", "content": user_payload},
     ]
+
+    # Apply whatever this model already told us it rejects, so only the first
+    # call of a sweep pays for the discovery round trip.
+    adapt = get_param_adaptations(provider.name, model)
+
     kwargs: dict[str, Any] = {
         "model": model,
         "messages": messages,
     }
-    if json_mode and provider.name in _JSON_MODE_PROVIDERS:
+    if json_mode and provider.name in _JSON_MODE_PROVIDERS and not adapt.get("response_format_dropped"):
         kwargs["response_format"] = {"type": "json_object"}
-    if max_tokens:
-        # Some providers reject `max_tokens` for newer models; tolerate it below.
-        kwargs["max_tokens"] = max_tokens
+    if max_tokens and adapt.get("token_param") != "dropped":
+        kwargs[adapt.get("token_param", "max_tokens")] = max_tokens
+    if not adapt.get("temperature_dropped"):
+        kwargs["temperature"] = temperature
 
-    try:
-        completion = client.chat.completions.create(**kwargs, temperature=temperature)
-    except Exception as exc:
-        err = str(exc).lower()
-        # Newer OpenAI reasoning models reject custom temperature.
-        if "temperature" in err and "unsupported" in err:
-            kwargs.pop("temperature", None)
+    last_exc: Optional[Exception] = None
+    for _ in range(_MAX_PARAM_RETRIES):
+        try:
             completion = client.chat.completions.create(**kwargs)
-        # Some providers (e.g. certain Gemini models via OpenAI-compat) reject max_tokens.
-        elif "max_tokens" in err and ("unsupported" in err or "unknown" in err):
-            kwargs.pop("max_tokens", None)
-            completion = client.chat.completions.create(**kwargs, temperature=temperature)
-        # Some providers/models reject json_object response_format.
-        elif "response_format" in err or "json_object" in err:
-            kwargs.pop("response_format", None)
-            completion = client.chat.completions.create(**kwargs, temperature=temperature)
-        else:
-            raise
+            break
+        except Exception as exc:
+            last_exc = exc
+            # Each adaptation fixes one parameter, so a model that rejects
+            # several (gpt-5.x: max_tokens and temperature) needs a loop here,
+            # not the single retry this used to do.
+            if not _adapt_kwargs_after_error(provider.name, model, kwargs, exc):
+                raise
+    else:
+        raise last_exc  # type: ignore[misc]
 
     choice = completion.choices[0]
     return getattr(choice.message, "content", "") or ""
@@ -301,13 +455,26 @@ def _chat_anthropic(
     else:
         user_content = user
 
-    response = client.messages.create(
-        model=model,
-        system=system,
-        max_tokens=max_tokens,
-        temperature=temperature,
-        messages=[{"role": "user", "content": user_content}],
-    )
+    kwargs: dict[str, Any] = {
+        "model": model,
+        "system": system,
+        "max_tokens": max_tokens,
+        "messages": [{"role": "user", "content": user_content}],
+    }
+    # anthropic>=1.0 removed `temperature` from the messages.create() signature
+    # (TypeError if passed), but the API still honours it on Sonnet/Opus 4.6 and
+    # older, so it goes in as raw JSON. Opus 4.7+ / Sonnet 5+ reject it with a
+    # 400; drop it once and record that, same as the OpenAI-compatible path.
+    if not get_param_adaptations("anthropic", model).get("temperature_dropped"):
+        kwargs["extra_body"] = {"temperature": temperature}
+    try:
+        response = client.messages.create(**kwargs)
+    except Exception as exc:
+        if "extra_body" not in kwargs or "temperature" not in str(exc).lower():
+            raise
+        kwargs.pop("extra_body")
+        _record_adaptation("anthropic", model, "temperature_dropped", True)
+        response = client.messages.create(**kwargs)
     parts: list[str] = []
     for block in response.content:
         text = getattr(block, "text", None)

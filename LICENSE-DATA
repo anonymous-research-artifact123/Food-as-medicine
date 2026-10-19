@@ -1,0 +1,9 @@
+The FAM-Bench annotations and knowledge base (dataset/, knowledge_base/) are
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+
+Copyright (c) 2026 Anonymous Authors
+
+Recipe texts included in the dataset and the photos it links to (through
+url / image_url) remain the property of their original publishers. They are
+not covered by this license and are provided for research use only.
